@@ -1,0 +1,510 @@
+/* arrow_button의 기본 형태 */
+.arrow_button {
+    height: 40px;
+    width: 40px;
+    padding: 4px 32px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* border 가 있는 형태 */
+.arrow_button.border{
+    border: 1px solid var(--color-deep-black);
+}
+/* rounded 형태 */
+.arrow_button.rounded{
+    border-radius: 16px;
+}
+
+:root{
+    --main-x-padding: 32px;
+    --main-y-padding: 52px;
+}
+/*********************************/
+
+
+.coupon_info_container{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    z-index: 9999;
+}
+.coupon_info_container > button{
+    position: absolute;
+    right: 20px;
+    background: unset;
+    border: none;
+    line-height: 30px;
+}
+/******************************************/
+header{
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 48px;
+}
+header > .home_btn > img{
+        width: 50px;
+        height: 50px;
+    }
+
+header > .main_menu{
+    display: flex;
+}
+header > .main_menu > li{
+    padding: 4px 8px;
+    cursor: pointer;
+
+    /* 폰트넣기*/
+}
+header > .main_menu > li > a{
+    text-decoration: none; /*underline 제거*/
+    color: white;
+    font-size: var(--font-body-lg-size);
+    font-weight: 500;
+    line-height: var(--font-body-lg-line-height);
+    letter-spacing: var(--font-display-lg-letter-spacing);
+    padding: 4px 0;
+    &:hover{
+        border-bottom: 2px solid white;
+    }
+}
+
+
+header > nav > ul{
+    display: flex;
+}
+nav > ul > li{
+    margin: 0 12px;
+}
+nav > ul > li  > a{
+    color: white;
+    font-size: 30px;
+}
+/*꽉채우고싶을때 공식
+main > .hero section > video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    align-items: center;*/
+
+main > .hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+main > .hero_section{
+    background-color: darkgrey;
+    width: 100%;
+    height: 800px;
+    }
+
+main > .hero_section > video{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 200px;
+}
+/***********************************/
+/***********************************/
+/*.trending_section{
+    padding: 0 50px;
+}*/
+
+.trending_section{
+    padding: 100px 50px;
+    color: inherit;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: bold;
+
+}
+.trending_section > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.trending_section > div > ul{
+    display: flex;
+}
+.trending_section button{
+    background: unset;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+    text-decoration: none; /*underline 제거*/
+    color: grey;
+    &:hover {
+        border-bottom: 2px solid black;
+        color: black;
+    }
+}
+
+.trending_section .list {
+    display: flex;
+}
+
+
+.trending_section .product_list ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.trending_section .image_container > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*.product_list .tag{*/
+/*    color: grey;*/
+/*    margin: 2px 0;*/
+/*    text-align: left;*/
+/*}*/
+/*.product_list .title{*/
+/*    font-size: var(--font-body-md-size);*/
+/*    color: var(--color-primary);*/
+/*    margin: 2px 0;*/
+/*    display: block;*/
+/*}*/
+.product_list .list_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product_list span b{
+    font-size: 18px;
+    display: block;
+    color: var(--color-primary);
+}
+
+.product_list ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/**************************/
+
+/* 전체 섹션 */
+.edit_section {
+    display: flex;              /* 이미지 + 텍스트 가로 배치 */
+    align-items: center;        /* 세로 가운데 정렬 */
+    background: black;
+    padding-top: 40px;
+    position: relative;
+}
+
+/* 왼쪽 이미지 영역 */
+.image_container {
+    position: relative;
+    flex: 1;
+}
+
+/* 메인 이미지 */
+.image_container .main {
+    width: 700px;
+    height: 1000px;
+    object-fit: contain;
+    display: block;
+}
+
+/* 겹칠 이미지 */
+.image_container .sub {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 300px;
+    right: -60px;
+}
+
+/* 오른쪽 텍스트 영역 */
+.edit_section .label_container {
+    margin-left: 120px;         /* 이미지랑 거리 */
+    flex: 1;
+    margin-right: 150px;
+}
+/* 제목 */
+.edit_section .label_container > h2 {
+    font-size: 200px;
+    font-weight: normal;
+    color: white;
+    display: block;
+    margin-top: -50px;
+
+}
+.edit_section .label_container > div >a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+/**********************************/
+.information1_section{
+    padding: var(--main-y-padding) var(--main-x-padding);
+}
+.information1_section > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1000px;
+    gap: 16px;
+}
+.information1_section a{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.information1_section .information{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 20px;
+}
+.information1_section > h3{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.information1_section .information > h4{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.information1_section .information > p{
+    font-size: 18px;
+}
+
+.information1_section button{
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+.information2_section{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.information2_section > div > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 200px;
+}
+.information2_section > div > p{
+    color: white;
+
+}
+.information2_section > div:first-child{
+    flex: 2;
+    padding: 50px;
+}
+.information2_section > div:last-child{
+    flex: 1;
+}
+
+.information2_section .information_text {
+    font-size: 80px;
+    margin-bottom: 100px;
+}
+.information2_section > div:last-child img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/************************************************/
+.information3_section > p{
+    text-align: center;
+    margin-bottom: 52px;
+    padding: var(--main-y-padding);
+    font-size: 30px;
+    font-weight: bold;
+}
+main .image_section1{
+    display: flex;
+    gap: 8px;
+}
+main .image_section1 > div{
+    flex: 1;
+}
+
+main .image_section1 img{
+    width: 100%;
+}
+
+
+/**********************************************/
+.information4_section {
+    padding: 52px;
+    background-color: black;
+    margin-bottom: 68px;
+}
+.information4_section > div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+.information4_section > div > button{
+    display: flex;
+   justify-content: space-between;
+    width: 150px;
+}
+.information4_section h2{
+    font-size: var(--font-display-lg-size);
+    color: white;
+}
+.information4_section button{
+    font-size: var(--font-body-lg-size);
+    align-self: center;
+}
+
+.information4_section .slide_wrapper{
+    overflow: hidden;
+}
+
+.information4_section .slide_container{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.information4_section .slide_container > li{
+    flex-basis: 480px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.information4_section .slide_container > li:not(:last-child){
+    margin-right: 16px;
+}
+.information4_section .slide_container > li > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/**************************************/
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+footer .site_nav{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 56px;
+}
+footer .site_nav > div{
+    width: 220px;
+}
+footer .site_nav h4{
+    margin-bottom: 12px;
+    font-size: var(--font-body-md-size);
+}
+footer .site_nav ul{
+    display: flex;
+    flex-direction: column;
+}
+footer .site_nav li{
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: var(--color-primary-fixed-dim);
+}
+
+footer .site_nav li a{
+    color: var(--color-primary-fixed);
+}
+
+
+footer .sns_nav ul{
+    display: flex;
+}
+footer .sns_nav li{
+    margin-right: 12px;
+}
+footer .sns_nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+}
+footer > div > div{
+    display: flex;
+    flex-direction: column;
+}
+footer .me_information{
+    margin-top: auto;
+    text-align: right;
+}
+
+footer .me_information .name{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+footer .me_information .email{
+    font-size: 12px;
+}
+footer .me_information .text{
+    font-size: 12px;
+}
+
+footer hr{
+    margin: 24px 0;
+}
+
+.corp_information{
+    font-size: 12px;
+    margin-bottom: 56px;
+
+}
+.site_information{
+    font-size: 12px;
+    text-align: right;
+}
+footer > section .policy{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

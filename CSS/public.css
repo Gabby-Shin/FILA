@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family:*/
+}
+ul{
+    list-style: none;
+}
+
+/*변수만드는 방법*/
+
+/*--color-primary: #002D72*/
+
+
+/*/////////////////////////////////*/
+:root {
+    /* Brand */
+    --brand-name: "Noir & Neon";
+
+    /* Colors */
+    --color-surface: #f9f9f9;
+    --color-surface-dim: #dadada;
+    --color-surface-bright: #f9f9f9;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f3f3f3;
+    --color-surface-container: #eeeeee;
+    --color-surface-container-high: #e8e8e8;
+    --color-surface-container-highest: #e2e2e2;
+
+    --color-on-surface: #1a1c1c;
+    --color-on-surface-variant: #4c4546;
+
+    --color-inverse-surface: #2f3131;
+    --color-inverse-on-surface: #f1f1f1;
+
+    --color-outline: #7e7576;
+    --color-outline-variant: #cfc4c5;
+    --color-surface-tint: #5e5e5e;
+
+    --color-primary: #000000;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #1b1b1b;
+    --color-on-primary-container: #848484;
+    --color-inverse-primary: #c6c6c6;
+
+    --color-secondary: #b60055;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #e4006c;
+    --color-on-secondary-container: #fffbff;
+
+    --color-tertiary: #000000;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #1a1c1c;
+    --color-on-tertiary-container: #838484;
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+
+    --color-primary-fixed: #e2e2e2;
+    --color-primary-fixed-dim: #c6c6c6;
+    --color-on-primary-fixed: #1b1b1b;
+    --color-on-primary-fixed-variant: #474747;
+
+    --color-secondary-fixed: #ffd9e0;
+    --color-secondary-fixed-dim: #ffb1c3;
+    --color-on-secondary-fixed: #3f0019;
+    --color-on-secondary-fixed-variant: #8f0041;
+
+    --color-tertiary-fixed: #e2e2e2;
+    --color-tertiary-fixed-dim: #c6c6c7;
+    --color-on-tertiary-fixed: #1a1c1c;
+    --color-on-tertiary-fixed-variant: #454747;
+
+    --color-background: #f9f9f9;
+    --color-on-background: #1a1c1c;
+    --color-surface-variant: #e2e2e2;
+
+    /* Semantic colors */
+    --color-deep-black: #000000;
+    --color-vibrant-pink: #e4006c;
+    --color-pure-white: #ffffff;
+    --color-neutral-border: #cfc4c5;
+
+    /* Typography */
+    --font-family-base: "Hanken Grotesk", sans-serif;
+
+    --font-display-lg-family: "Hanken Grotesk", sans-serif;
+    --font-display-lg-size: 64px;
+    --font-display-lg-weight: 700;
+    --font-display-lg-line-height: 1.1;
+    --font-display-lg-letter-spacing: -0.04em;
+
+    --font-display-lg-mobile-family: "Hanken Grotesk", sans-serif;
+    --font-display-lg-mobile-size: 40px;
+    --font-display-lg-mobile-weight: 700;
+    --font-display-lg-mobile-line-height: 1.1;
+    --font-display-lg-mobile-letter-spacing: -0.02em;
+
+    --font-headline-lg-family: "Hanken Grotesk", sans-serif;
+    --font-headline-lg-size: 32px;
+    --font-headline-lg-weight: 600;
+    --font-headline-lg-line-height: 1.2;
+
+    --font-headline-sm-family: "Hanken Grotesk", sans-serif;
+    --font-headline-sm-size: 20px;
+    --font-headline-sm-weight: 600;
+    --font-headline-sm-line-height: 1.4;
+
+    --font-body-lg-family: "Hanken Grotesk", sans-serif;
+    --font-body-lg-size: 18px;
+    --font-body-lg-weight: 400;
+    --font-body-lg-line-height: 1.6;
+
+    --font-body-md-family: "Hanken Grotesk", sans-serif;
+    --font-body-md-size: 16px;
+    --font-body-md-weight: 400;
+    --font-body-md-line-height: 1.6;
+
+    --font-label-md-family: "Hanken Grotesk", sans-serif;
+    --font-label-md-size: 14px;
+    --font-label-md-weight: 600;
+    --font-label-md-line-height: 1.2;
+    --font-label-md-letter-spacing: 0.05em;
+
+    /* Radius */
+    --radius-sm: 0.25rem;
+    --radius-default: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* Spacing */
+    --spacing-base: 8px;
+    --spacing-section-gap: 80px;
+    --spacing-container-padding: 24px;
+    --spacing-gutter: 16px;
+
+    /* Layout */
+    --container-max-width: 1200px;
+    --grid-desktop-columns: 12;
+    --grid-mobile-columns: 4;
+
+    /* Borders */
+    --border-width-thin: 1px;
+    --border-default: 1px solid var(--color-outline-variant);
+    --border-strong: 1px solid var(--color-primary);
+
+    /* Elevation */
+    --shadow-ambient: 0 12px 40px rgba(0, 0, 0, 0.05);
+
+    /* Component tokens */
+    --button-primary-bg: var(--color-primary);
+    --button-primary-text: var(--color-on-primary);
+    --button-secondary-bg: transparent;
+    --button-secondary-text: var(--color-primary);
+    --button-secondary-border: var(--border-strong);
+    --button-accent-bg: var(--color-secondary-container);
+    --button-accent-text: var(--color-on-secondary-container);
+
+    --input-bg: var(--color-surface-container-low);
+    --input-border: var(--color-outline-variant);
+    --input-focus-border: var(--color-secondary-container);
+    --input-error-border: var(--color-error);
+
+    --card-bg: var(--color-surface-container-low);
+    --card-text: var(--color-on-surface);
+    --card-price-text: var(--color-primary);
+
+    --header-bg: var(--color-pure-white);
+    --header-border: var(--color-outline-variant);
+    --nav-hover-color: var(--color-secondary-container);
+}

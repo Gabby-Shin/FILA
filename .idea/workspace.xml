@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5cc5c31-2f0b-4147-80c6-6d1689f14d03" name="변경" comment="260521_repackage" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="66" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gabby-Shin&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gabby-Shin/Clone.git&quot;,
+    &quot;accountId&quot;: &quot;0d29a6f8-2686-471e-b250-cd1da3818838&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000000001451307" />
+      <entry key="MS500" value="1.017074678683331" />
+      <entry key="S2" value="1.3773426244510687" />
+      <entry key="S5" value="1.9398541319930005" />
+      <entry key="S10" value="2.5723515923181997" />
+      <entry key="S30" value="4.170254623054694" />
+      <entry key="S60" value="6.215549693632124" />
+      <entry key="M2" value="9.043525532484036" />
+      <entry key="M5" value="14.284970186105696" />
+      <entry key="M10" value="22.75016261395647" />
+      <entry key="M15" value="32.58088986044301" />
+      <entry key="M30" value="63.36218588256613" />
+      <entry key="H1" value="112.27584955384593" />
+      <entry key="H2" value="165.05755518293836" />
+      <entry key="H4" value="206.18135520058138" />
+      <entry key="D1" value="252.17408708884048" />
+      <entry key="W1" value="261.4160335048206" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="4.087653180390706E-177" />
+      <entry key="MS500" value="5.275878775324135E-36" />
+      <entry key="S2" value="1.5155619806341427E-9" />
+      <entry key="S5" value="2.966412850556762E-4" />
+      <entry key="S10" value="0.017261244753494203" />
+      <entry key="S30" value="0.2945219388425787" />
+      <entry key="S60" value="0.7446861394921046" />
+      <entry key="M2" value="1.421579331352748" />
+      <entry key="M5" value="2.983197750831859" />
+      <entry key="M10" value="5.689275467624017" />
+      <entry key="M15" value="8.246768604655259" />
+      <entry key="M30" value="14.020117027102135" />
+      <entry key="H1" value="20.258225036183646" />
+      <entry key="H2" value="25.378972483438947" />
+      <entry key="H4" value="28.79013988796185" />
+      <entry key="D1" value="32.23314490949685" />
+      <entry key="W1" value="32.8887045945863" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.34151006469464923" />
+      <entry key="MS500" value="0.8204722946640054" />
+      <entry key="S2" value="1.302334649943673" />
+      <entry key="S5" value="1.8735202204900905" />
+      <entry key="S10" value="2.5230822515476654" />
+      <entry key="S30" value="4.394361509333155" />
+      <entry key="S60" value="6.888720723180654" />
+      <entry key="M2" value="10.402633923975836" />
+      <entry key="M5" value="17.22164364683681" />
+      <entry key="M10" value="28.399097660189366" />
+      <entry key="M15" value="40.78871845600485" />
+      <entry key="M30" value="77.34589061799994" />
+      <entry key="H1" value="132.50423772934883" />
+      <entry key="H2" value="190.41604277512647" />
+      <entry key="H4" value="234.95923710622716" />
+      <entry key="D1" value="284.40483143979793" />
+      <entry key="W1" value="294.3043851642028" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3E0hcVqr7Wk7aTZ65ga8iRSESq1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d/Desktop/Gabby/FILA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\d\Desktop\Gabby\FILA - list\CSS\product" />
+      <recent name="C:\Users\d\Desktop\Gabby\FILA - list\HTML\product" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\d\Downloads\Clone-master\FILA\CSS\product" />
+      <recent name="C:\Users\d\Downloads\Clone-master\FILA\HTML\product" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="260520">
+      <option name="closed" value="true" />
+      <created>1779266868973</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1779266868973</updated>
+    </task>
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="c5cc5c31-2f0b-4147-80c6-6d1689f14d03" name="변경" comment="260520" />
+      <created>1779321473654</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779321473654</updated>
+      <workItem from="1779321474666" duration="193000" />
+      <workItem from="1779321724609" duration="1962000" />
+      <workItem from="1779329132067" duration="14000" />
+      <workItem from="1779341442191" duration="106000" />
+      <workItem from="1779341558631" duration="132000" />
+      <workItem from="1779341701902" duration="129000" />
+      <workItem from="1779341842993" duration="11343000" />
+    </task>
+    <task id="LOCAL-00002" summary="260521_repackage">
+      <option name="closed" value="true" />
+      <created>1779321778792</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1779321778792</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="260520" />
+    <MESSAGE value="260521_repackage" />
+    <option name="LAST_COMMIT_MESSAGE" value="260521_repackage" />
+  </component>
+</project>
