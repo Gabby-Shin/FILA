@@ -122,6 +122,9 @@
     padding: 24px;
 }
 /****************************************/
+#detail {
+    padding: 48px 160px;
+}
 #detail .image_container{
     position: sticky;
     top: 0;
@@ -132,7 +135,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     align-self: flex-start;
-    margin-right: 20px;
 }
 
 #detail .image_container img{
@@ -140,7 +142,19 @@
     height: 100%;
     object-fit: cover;
 }
-
+#detail .information .text{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+#detail .information .sub_text{
+    font-size: 16px;
+    font-weight: normal;
+    color: gray;
+}
+#detail .information .sub_information{
+    margin-bottom: 100px;
+}
 /****************************************/
 
 #detail .accordion{
@@ -152,6 +166,12 @@
     padding: 8px 0;
     border-bottom: 1px solid black;
 }
+details > summary:first-of-type {
+    display: list-item;
+    counter-increment: list-item 0;
+    list-style: none;
+}
+
 #detail .accordion > .body{
     display: block;
 }
@@ -266,6 +286,7 @@
     display: flex;
     gap: 8px;
 }
+
 #checkpoint .check_title .buttons > button{
     border-radius: 24px;
     font-size: 24px;
@@ -301,20 +322,18 @@
 #model_cut{
     background-color: black;
     padding: 80px 56px;
-}
-#model_cut .model_cut_box .model_cut_title{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 32px;
 }
-#model_cut .model_cut_title > h2 {
+#model_cut > .model_cut_title > h2 {
     color: white;
     font-size: 24px;
+    display: inline-flex;
+    align-items: center;
 }
-#model_cut .model_cut_title .buttons{
-    display: flex;
+#model_cut .buttons{
     gap: 8px;
+    display: inline-flex;
 }
 #model_cut .buttons > button{
     border-radius: 24px;
@@ -322,11 +341,17 @@
     width: 80px;
     height: 48px;
 }
-#model_cut .model_cut_box .image_container{
+#model_cut .model_cut_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+#model_cut .image_container{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 32px;
+    object-fit: cover;
 
 }
 #model_cut .image_container .image_container_card img{
