@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5cc5c31-2f0b-4147-80c6-6d1689f14d03" name="변경" comment="260521_repackage" />
+    <list default="true" id="f7e60162-f0d7-4de9-bb76-9d3d19cb909a" name="Changes" comment="260522" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
+<<<<<<< HEAD
     <option name="cachedIndexableFilesCount" value="78" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
@@ -22,25 +23,31 @@
       </list>
     </option>
   </component>
+=======
+    <option name="cachedIndexableFilesCount" value="79" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+>>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Gabby-Shin&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Gabby-Shin"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Gabby-Shin/Clone.git&quot;,
-    &quot;accountId&quot;: &quot;0d29a6f8-2686-471e-b250-cd1da3818838&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Gabby-Shin/FILA.git",
+    "accountId": "0cc8fc38-b5f6-44a2-bc86-4f396474361b"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
+<<<<<<< HEAD
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
@@ -100,18 +107,23 @@
       <entry key="W1" value="542.8271672138616" />
     </decayedShown>
   </component>
+=======
+>>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2,
-  &quot;fromUser&quot;: false
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="3E0hcVqr7Wk7aTZ65ga8iRSESq1" />
+  <component name="ProjectId" id="3E2YozazBQfB1898GQx4Slcb4oC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "DefaultHtmlFileTemplate": "HTML File",
+=======
+>>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -119,6 +131,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+<<<<<<< HEAD
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/d/Desktop/Gabby/FILA",
@@ -128,10 +141,21 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
+=======
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+>>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+<<<<<<< HEAD
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\d\Desktop\Gabby\FILA - list\CSS\product" />
@@ -144,22 +168,34 @@
       <recent name="C:\Users\d\Downloads\Clone-master\FILA\HTML\product" />
     </key>
   </component>
+=======
+>>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="260520">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7e60162-f0d7-4de9-bb76-9d3d19cb909a" name="Changes" comment="" />
+      <created>1779378311515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779378311515</updated>
+      <workItem from="1779378313216" duration="98000" />
+      <workItem from="1779378414911" duration="515000" />
+    </task>
+    <task id="LOCAL-00001" summary="260522">
       <option name="closed" value="true" />
-      <created>1779266868973</created>
+      <created>1779378643803</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1779266868973</updated>
+      <updated>1779378643803</updated>
     </task>
+<<<<<<< HEAD
     <task active="true" id="Default" summary="디폴트 작업">
       <changelist id="c5cc5c31-2f0b-4147-80c6-6d1689f14d03" name="변경" comment="260520" />
       <created>1779321473654</created>
@@ -185,28 +221,16 @@
       <updated>1779321778792</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+=======
+    <option name="localTasksCounter" value="2" />
+>>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-    <MESSAGE value="260520" />
-    <MESSAGE value="260521_repackage" />
-    <option name="LAST_COMMIT_MESSAGE" value="260521_repackage" />
+    <MESSAGE value="260522" />
+    <option name="LAST_COMMIT_MESSAGE" value="260522" />
   </component>
 </project>
