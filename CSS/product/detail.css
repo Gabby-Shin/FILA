@@ -3,7 +3,7 @@
     height: 100vh;
 }
 #main_info{
-    margin-left: 0px;
+    margin-left: 0;
 }
 #main > div{
     flex: 1;
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 0;
 }
 /****************************************/
 #main .information{
@@ -79,9 +79,6 @@
     font-size: var(--font-body-md-size);
 }
 .accordion > details .body{
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%;
     background: white;
     display: grid;
@@ -94,6 +91,10 @@
     counter-increment: list-item 0;
     list-style: none;
 }
+/*style에서*/
+/*summary::marker{*/
+/*    content: ::'';*/
+/*}*/
 
 /******************************************/
 #main .information .size{
@@ -139,21 +140,24 @@
 }
 #detail > div{
     flex: 1;
-    padding: 24px;
+
 }
 /****************************************/
 #detail .image_container{
     position: sticky;
     top: 0;
+    left: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    width: 800px;       /* 핵심 */
-    height: 800px;
+    gap: 24px;
+    width: 100%;
     aspect-ratio: 1 / 1;
-    margin: 0 auto;      /* 가운데 */
+    /*margin: 0 auto;      !* 가운데 *!*/
+    align-self: flex-start; /*맨위에붙으면서 세로늘어짐 없음*/
 }
-
+#detail .information{
+    padding-left: 48px;
+}
 #detail .image_container img{
     width: 100%;
     height: 100%;
@@ -243,7 +247,6 @@ details > summary:first-of-type {
 #detail .accordion .fit_container > div > span{
     display: block;
     text-align: center;
-    margin: 4px 0;
     color: gray;
     margin-bottom: 8px;
 }
@@ -640,7 +643,14 @@ hr{
     object-fit: cover;
     border-radius: 16px;
 }
-
+.reviews .report{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+    border: none;
+}
 
 
 

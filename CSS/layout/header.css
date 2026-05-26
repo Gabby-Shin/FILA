@@ -61,10 +61,10 @@ header > .main_menu{
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: #2f3131;
 }
 header > .main_menu > li{
     padding: 4px 8px;
+    text-align: left;
     cursor: pointer;
     &:hover > .sub_menu_container{
         display: flex;
@@ -108,7 +108,7 @@ header .sub_menu_container{
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 24px 0;
+    padding: 32px 0;
     cursor: default;
 }
 header .sub_menu_container > div{
@@ -116,22 +116,29 @@ header .sub_menu_container > div{
 }
 header .sub_menu_title{
     display: block;
-    font-size: var(--font-body-md-size);
+    font-size: 12px;
     margin-bottom: 24px;
-    text-align: center;
+    text-align: left;
 }
 header .sub_menu_title a{
-    font-size: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+header .sub_menu_title a:hover{
+    text-decoration: underline;
     color: inherit;
 }
+header .sub_menu{}
 header .sub_menu > li{
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 header .sub_menu > li a {
-    text-align: center;
-    font-size: var(--font-body-lg-size);
+    text-align: left;
+    font-size: 14px;
     text-decoration: none;
     color: black;
     &:hover{
