@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../CSS/product/detail.css">
     <script src="https://kit.fontawesome.com/d19fdaba43.js" crossorigin="anonymous"></script>
     <title>상품 디테일</title>
+    <script src="../../JS/layout/detail.js"></script>
 </head>
 <body>
 <main>
@@ -56,11 +57,10 @@
                             </div>
                     </details>
                 </div>
-
                 <div class="cart">
                     <button type="button">
                         <strong>카트에 추가</strong>
-                        <strong >49,900원</strong>
+                        <strong >139,000원</strong>
                     </button>
                 </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="accordion">
                 <div class="head">
                     <details>
-                        <summary>
+                        <summary class = "member">
                             <b>멤버쉽 혜택&#32;</b>
                             <i class="fa-solid fa-caret-down"></i>
                         </summary>
@@ -108,7 +108,7 @@
             <div class="accordion">
                 <div class="head">
                     <details>
-                            <summary>
+                            <summary  class = "member">
                                 <b>상품정보고시&#32;</b>
                                 <i class="fa-solid fa-caret-down"></i>
                             </summary>
@@ -154,14 +154,14 @@
             <div class="accordion">
                 <div class="head">
                     <details>
-                        <summary>
+                        <summary class = "member">
                             <b>핏 & 스펙 가이드</b>
                              <i class="fa-solid fa-caret-down"></i>
                         </summary>
                          <div class="body fit_spec_guide">
                              <div class="fit_container">
                                 <div class="fit_container1">
-                                    <span>SLIM</span>
+                                    <span class>SLIM</span>
                                     <span>부담스럽지 않게 날씬해 보이는 효과를 주는 핏</span>
                                 </div>
                                 <div>
@@ -194,23 +194,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="spec">
-                        <b>두께감</b>
-                        <div class="progress_container">
-                            <div class="progress parent">
-                                <div class="progress child"></div>
-                            </div>
-                            <div>
-                                <span>없음</span>
-                                <span>보통</span>
-                                <span>좋음</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </details>
+                        <div class="spec">
+                            <b>두께감</b>
+                            <div class="progress_container">
+                                <div class="progress parent">
+                                    <div class="progress child"></div>
+                                </div>
+                                    <div>
+                                        <span>없음</span>
+                                        <span>보통</span>
+                                        <span>좋음</span>
+                                    </div>
+                              </div>
+                           </div>
+                         </div>
+                    </details>
+              </div>
         </div>
     </section>
+
 
 
     <section id="checkpoint">
@@ -293,6 +295,11 @@
                 <div class="image_container_card">
                     <img src="/IMAGE/detail8.webp" alt="#">
                 </div>
+                <div class="image_container_card">
+                    <img src="../../IMAGE/detail11.webp">
+                </div>
+                <div class="image_container_card">
+                    <img src="../../IMAGE/detail12.webp">
             </div>
     </section>
 
@@ -413,10 +420,18 @@
         <section class="filter">
             <div>
                 <div class="sort_container">
-                    <button type="button">최신순</button>
-                    <button type="button"><i class="fa-solid fa-star"></i>AI 추천순</button>
-                    <button type="button">별점순</button>
-                </div>
+                        <button type="button" data-tooltip="최신 리뷰 우선정렬">최신순</button>
+
+                        <button type="button" data-tooltip="쇼핑몰 추천리뷰와 AI리뷰 분석">
+                            <i class="fa-solid fa-star"></i>
+                            AI 추천순
+                        </button>
+
+                        <button type="button" data-tooltip="별점이 높은 리뷰를 우선정렬">별점순</button>
+                    </div>
+<!--                    <button type="button">최신순</button>-->
+<!--                    <button type="button"><i class="fa-solid fa-star"></i>AI 추천순</button>-->
+<!--                    <button type="button">별점순</button>-->
                 <div class="search_container">
                     <button>
                         <i class="fa-regular fa-circle-check"></i>
@@ -455,57 +470,290 @@
                 </div>
             </div>
 
+            <hr class="except">
+
+
         </section>
 
-        <section class="reviews">
-            <ul>
-                <li class="item">
-                    <div class="contents">
-                        <div class="user">
-                            <a href="#" class="user_icon">
-                                <img src="../../IMAGE/짱구.jpg">
-
-                            </a>
-                            <span class="user_name">짱구짱</span>
-                        </div>
-                        <div class="meta">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+         <section class="whole_reviews">
+            <section class="reviews">
+                <ul>
+                    <li class="item">
+                        <div class="contents">
+                            <div class="user">
+                                <a href="#" class="user_icon">
+                                    <img src="../../IMAGE/짱구.jpg">
+                                </a>
+                                <span class="user_name">짱구짱</span>
                             </div>
-                            <span class="date"></span>
-                        </div>
-                        <div class="options">
-                            <span>한달이상사용</span>
-                        </div>
-                        <p class="content">
-                            #광고 🐩 톤다운 브라운에 그린 컬러 조합 너무 귀여운 MY FAVORITE 강쥐 그래픽 티셔츠🐶🐾 봄 여름에 편하게 포인트 주기 딱❕❕
-                            <br>
-                            #FILA #휠라 #휠라마이티 #마이티셔츠
-                        </p>
-                    <div class="images">
-                        <button type="button" class="image_button"><img src="../../IMAGE/button_img3.webp">
-                        </button>
-                        <button type="button" class="image_button">
-                            <img src="../../IMAGE/button_img6.webp">
-                        </button>
-                        <button type="button" class="image_button"><img src="../../IMAGE/buttonbutton_img5.webp">
-                        </button>
-                    </div>
-                        <div class="report">
-                            <button type="button">신고하기</button>
-                            <button type="button">
-                                <i class="fa-regular fa-thumbs-up"></i>
-                                <span>0</span>
+                            <div class="meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="date"></span>
+                            </div>
+                            <div class="options">
+                                <span>한달이상사용</span>
+                                <span>쇼핑몰 추천</span>
+                            </div>
+                            <p class="content">
+                                #광고 🐩 톤다운 브라운에 그린 컬러 조합 너무 귀여운 MY FAVORITE 강쥐 그래픽 티셔츠🐶🐾 봄 여름에 편하게 포인트 주기 딱❕❕
+                                <br>
+                                #FILA #휠라 #휠라마이티 #마이티셔츠
+                            </p>
+                             <div class="images">
+                            <button type="button" class="image_button"><img src="../../IMAGE/button_img3.webp">
                             </button>
+                            <button type="button" class="image_button">
+                                <img src="../../IMAGE/button_img6.webp">
+                            </button>
+                            <button type="button" class="image_button"><img src="../../IMAGE/buttonbutton_img5.webp">
+                            </button>
+                              </div>
+
+                            <div class="report">
+                                <button type="button">
+                                    <i class="fa-regular fa-bell"></i>
+                                    신고 및 차단
+                                </button>
+                            </div>
+                            <div class="thumbs">
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    도움돼요
+                                </button>
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    도움안돼요
+                                </button>
+                                <button tupe="button">
+                                    댓글
+                                    <span>0</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
+                        <section class="reviews_2">
+                            <div><strong>FILA</strong> 관리자 리뷰</div>
+                            <div><b>작성자 등급</b>운영진</div>
+                            <div>
+                                <span class="date"></span>
+                            </div>
+                        </section>
+                    </li>
+                    <hr>
+                    <li class="item">
+                        <div class="contents">
+                            <div class="user">
+                                <a href="#" class="user_icon">
+                                    <img src="../../IMAGE/짱구.jpg">
+                                </a>
+                                <span class="user_name">짱구짱</span>
+                            </div>
+                            <div class="meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="date"></span>
+                            </div>
+                            <div class="options">
+                                <span>한달이상사용</span>
+                                <span>쇼핑몰 추천</span>
+                            </div>
+                            <p class="content">
+                                #광고 🐩 톤다운 브라운에 그린 컬러 조합 너무 귀여운 MY FAVORITE 강쥐 그래픽 티셔츠🐶🐾 봄 여름에 편하게 포인트 주기 딱❕❕
+                                <br>
+                                #FILA #휠라 #휠라마이티 #마이티셔츠
+                            </p>
+                            <div class="images">
+                                <button type="button" class="image_button"><img src="../../IMAGE/button_img3.webp">
+                                </button>
+                                <button type="button" class="image_button">
+                                    <img src="../../IMAGE/button_img6.webp">
+                                </button>
+                                <button type="button" class="image_button"><img src="../../IMAGE/buttonbutton_img5.webp">
+                                </button>
+                            </div>
+
+                            <div class="report">
+                                <button type="button">
+                                    <i class="fa-regular fa-bell"></i>
+                                    신고 및 차단
+                                </button>
+                            </div>
+                            <div class="thumbs">
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    도움돼요
+                                </button>
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    도움안돼요
+                                </button>
+                                <button tupe="button">
+                                    댓글
+                                    <span>0</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <section class="reviews_2">
+                            <div><strong>FILA</strong> 관리자 리뷰</div>
+                            <div><b>작성자 등급</b>운영진</div>
+                            <div>
+                                <span class="date"></span>
+                            </div>
+                        </section>
+                    </li>
+                    <hr>
+                    <li class="item">
+                        <div class="contents">
+                            <div class="user">
+                                <a href="#" class="user_icon">
+                                    <img src="../../IMAGE/짱구.jpg">
+                                </a>
+                                <span class="user_name">짱구짱</span>
+                            </div>
+                            <div class="meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="date"></span>
+                            </div>
+                            <div class="options">
+                                <span>한달이상사용</span>
+                                <span>쇼핑몰 추천</span>
+                            </div>
+                            <p class="content">
+                                #광고 🐩 톤다운 브라운에 그린 컬러 조합 너무 귀여운 MY FAVORITE 강쥐 그래픽 티셔츠🐶🐾 봄 여름에 편하게 포인트 주기 딱❕❕
+                                <br>
+                                #FILA #휠라 #휠라마이티 #마이티셔츠
+                            </p>
+                            <div class="images">
+                                <button type="button" class="image_button"><img src="../../IMAGE/button_img3.webp">
+                                </button>
+                                <button type="button" class="image_button">
+                                    <img src="../../IMAGE/button_img6.webp">
+                                </button>
+                                <button type="button" class="image_button"><img src="../../IMAGE/buttonbutton_img5.webp">
+                                </button>
+                            </div>
+
+                            <div class="report">
+                                <button type="button">
+                                    <i class="fa-regular fa-bell"></i>
+                                    신고 및 차단
+                                </button>
+                            </div>
+                            <div class="thumbs">
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    도움돼요
+                                </button>
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    도움안돼요
+                                </button>
+                                <button tupe="button">
+                                    댓글
+                                    <span>0</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <section class="reviews_2">
+                            <div><strong>FILA</strong> 관리자 리뷰</div>
+                            <div><b>작성자 등급</b>운영진</div>
+                            <div>
+                                <span class="date"></span>
+                            </div>
+                        </section>
+                    </li>
+                    <hr>
+                    <li class="item">
+                        <div class="contents">
+                            <div class="user">
+                                <a href="#" class="user_icon">
+                                    <img src="../../IMAGE/짱구.jpg">
+                                </a>
+                                <span class="user_name">짱구짱</span>
+                            </div>
+                            <div class="meta">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="date"></span>
+                            </div>
+                            <div class="options">
+                                <span>한달이상사용</span>
+                                <span>쇼핑몰 추천</span>
+                            </div>
+                            <p class="content">
+                                #광고 🐩 톤다운 브라운에 그린 컬러 조합 너무 귀여운 MY FAVORITE 강쥐 그래픽 티셔츠🐶🐾 봄 여름에 편하게 포인트 주기 딱❕❕
+                                <br>
+                                #FILA #휠라 #휠라마이티 #마이티셔츠
+                            </p>
+                            <div class="images">
+                                <button type="button" class="image_button"><img src="../../IMAGE/button_img3.webp">
+                                </button>
+                                <button type="button" class="image_button">
+                                    <img src="../../IMAGE/button_img6.webp">
+                                </button>
+                                <button type="button" class="image_button"><img src="../../IMAGE/buttonbutton_img5.webp">
+                                </button>
+                            </div>
+
+                            <div class="report">
+                                <button type="button">
+                                    <i class="fa-regular fa-bell"></i>
+                                    신고 및 차단
+                                </button>
+                            </div>
+                            <div class="thumbs">
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    도움돼요
+                                </button>
+                                <button tupe="button">
+                                    <i class="fa-regular fa-thumbs-down"></i>
+                                    도움안돼요
+                                </button>
+                                <button tupe="button">
+                                    댓글
+                                    <span>0</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <section class="reviews_2">
+                            <div><strong>FILA</strong> 관리자 리뷰</div>
+                            <div><b>작성자 등급</b>운영진</div>
+                            <div>
+                                <span class="date"></span>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+
+
+         </section>
     </section>
 
 

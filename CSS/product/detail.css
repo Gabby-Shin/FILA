@@ -35,6 +35,8 @@
     justify-content: space-between;
     margin-bottom: 8px;
     font-size: var(--font-body-md-size);
+    cursor: pointer;
+    border: none;
 }
 #main .information .header .share{
     border: unset;
@@ -64,33 +66,39 @@
     margin-right: 4px;
 }
 /*******************************/
-.accordion{
+
+.accordion {
     border: 1px solid black;
     border-radius: 24px;
-    position: relative;
-    font-size: var(--font-body-md-size);
 }
-.accordion > .head{
+.accordion summary.head {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    cursor: pointer;
     padding: 12px 16px;
-    background: white;
-    font-size: var(--font-body-md-size);
+    cursor: pointer;
 }
-.accordion > details .body{
-    width: 100%;
-    background: white;
+    /* 기본 화살표 제거 */
+summary {
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+/* body */
+.accordion .body {
+    padding: 12px;
+}
+.accordion details .body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4px;
-    z-index: 10;
 }
-.accordion details > summary:first-of-type {
-    display: list-item;
-    counter-increment: list-item 0;
-    list-style: none;
-}
+/*.accordion details > summary:first-of-type {*/
+/*    display: list-item;*/
+/*    counter-increment: list-item 0;*/
+/*    list-style: none;*/
+/*}*/
 /*style에서*/
 /*summary::marker{*/
 /*    content: ::'';*/
@@ -162,6 +170,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 #detail .information .text{
     font-size: 16px;
@@ -194,16 +203,18 @@
     margin-bottom: 8px;
 }
 
-details > summary:first-of-type {
-    display: list-item;
-    counter-increment: list-item 0;
-    list-style: none;
+#detail .accordion details .member{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    cursor: pointer;
 }
 
-#detail .accordion > .body{
+#detail .accordion .body{
     display: block;
 }
-#detail .accordion div ul{
+#detail .accordion .body ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -238,11 +249,12 @@ details > summary:first-of-type {
     }
 }
 
-.accordion .fit_container .fit_container1 {
+#detail .accordion .fit_container .fit_container1 {
     border: 2px solid black;
 }
-.accordion .fit_container .fit_container1 span:first-child {
+#detail .accordion .fit_container1 span:first-child {
     font-weight: bolder;
+    color: black;
 }
 #detail .accordion .fit_container > div > span{
     display: block;
@@ -325,12 +337,18 @@ details > summary:first-of-type {
     display: flex;
     gap: 8px;
 }
+#checkpoint .check_title .buttons button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 
 #checkpoint .check_title .buttons > button{
     border-radius: 24px;
     font-size: 24px;
     width: 80px;
     height: 48px;
+    border: none;
 }
 .cardbox{
     display: flex;
@@ -379,6 +397,12 @@ details > summary:first-of-type {
     font-size: 24px;
     width: 80px;
     height: 48px;
+    border: none;
+}
+#model_cut .buttons > button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 #model_cut p{
     color: white;
@@ -422,6 +446,7 @@ details > summary:first-of-type {
     color: white;
     font-size: var(--font-body-md-size);
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 #review .rating{
@@ -499,15 +524,20 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
     border: none;
     color: gray;
     background-color: white;
+    cursor: pointer;
 }
 
 #review .photo_video > ul{
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(8, minmax(200px, 1fr));
+}
+#review .photo_video > ul li{
+    cursor: pointer;
 }
 #review .photo_video .image_container{
     position: relative;
@@ -520,17 +550,39 @@ hr{
     height: 100%;
     object-fit: cover;
 }
-#review .photo_video i{
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    color: white;
-}
 /***************************************/
+.filter .sort_container button {
+    position: relative;
+}
+
+/* 말풍선 */
+.filter .sort_container button::after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+
+    top: 120%;     /* 아래로 */
+    right: -60%;      /* 오른쪽 정렬 */
+    transform: translateY(5px);
+
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: all 0.2s ease;
+    z-index: 100;
+}
 #review .filter > div{
     display: flex;
     justify-content: space-between;
-    margin: 32px 0;
+    margin: 24px 0;
     gap: 24px;
 }
 #review .sort_container{
@@ -539,14 +591,19 @@ hr{
     justify-content: center;
     gap: 16px;
 }
-#review .sort_container button{
+#review .filter .sort_container button{
     border: none;
     color: gray;
     background-color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 #review .sort_container button:hover{
     color: black;
+}
+.filter .sort_container button:hover::after {
+    opacity: 1;
+    transform: translate(0);
 }
 #review .search_container{
     display: flex;
@@ -559,6 +616,7 @@ hr{
     color: gray;
     background-color: white;
     font-size: 16px;
+    cursor: pointer;
 }
 #review .search_container button:hover{
     color: black;
@@ -568,6 +626,7 @@ hr{
     border: 1px gray solid;
     border-radius: 4px;
     padding: 4px 12px;
+    cursor: pointer;
 }
 #review .filter .search > input{
     border: none;
@@ -588,15 +647,29 @@ hr{
     border: 1px solid gray;
     background: none;
     color: black;
-    border-color: darkslategrey;
+    cursor: pointer;
 }
-
+.except{
+    margin-bottom: 0;
+}
 /***************************/
+.whole_reviews{
+    display: flex;
+    margin-top: 48px;
+}
+.whole_reviews .reviews li{
+    margin-bottom: 40px;
+    margin-top: 48px;
+}
+.reviews{
+    flex: 3;
+}
 #review .reviews .item{
     display: flex;
 }
 #review .reviews .item .contents{
-    flex: 1;
+    border-right: 0.5px lightgray solid;
+    flex: 3;
 }
 #review .reviews .item .contents .user{
     display: flex;
@@ -616,14 +689,18 @@ hr{
     object-fit: cover;
 }
 .options{
-    background-color: lightgray;
+    display: flex;
+    gap: 16px;
     margin: 16px 0;
-    display: inline-block;
-    border-radius: 4px;
-    padding: 4px 8px;
 }
 .options span{
-    color: gray;
+    border-radius: 8px;
+    padding: 4px 8px;
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 12px;
 }
 #review .reviews .item .images{
     margin: 24px 0;
@@ -636,6 +713,7 @@ hr{
     width: 100px;
     height: 100px;
     border: none;
+    cursor: pointer;
 }
 #review .reviews .item .images img{
     width: 100%;
@@ -643,14 +721,51 @@ hr{
     object-fit: cover;
     border-radius: 16px;
 }
-.reviews .report{
+.reviews .item .contents .report{
+    margin-bottom: 16px;
+}
+.reviews .item .contents .report button{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     background-color: white;
     border: none;
+    color: gray;
+    cursor: pointer;
 }
+.reviews .item .contents .thumbs{
+    display: inline-flex;
+    gap: 16px;
+}
+.reviews .item .contents .report button:hover{
+    color: black;
+}
+.reviews .item .contents .thumbs button{
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+.reviews .item .contents .thumbs button:hover{
+    color: black;
+}
+
+.reviews_2{
+    display: flex;
+    flex: 1;
+    margin: 24px;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 12px;
+    color: gray;
+}
+.reviews_2 strong{
+    color: black;
+
+}
+
 
 
 

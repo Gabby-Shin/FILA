@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<div class="sort_container">
+    <button data-tooltip="테스트">버튼</button>
+</div>
+
+<style>
+    .sort_container button {
+        position: relative;
+    }
+
+    .sort_container button::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        background: black;
+        color: white;
+        padding: 5px 8px;
+        border-radius: 5px;
+
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .sort_container button:hover::after {
+        opacity: 1;
+    }
+</style>

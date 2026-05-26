@@ -1,131 +1,153 @@
-:root{
-    --modal-form-padding: 32px;
-}
-
-.modal_container{
-    top: 0;
-    z-index: 99;
+/* 배경 */
+.popup_overlay {
     position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+
     display: flex;
-    /*display: none;*/
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal{
+/* 팝업 */
+.popup {
+    width: 1000px;
+    height: 800px;
+    background: white;
     display: flex;
-    width: 70%;
-    height: 90%;
-    background-color: white;
+    overflow: hidden;
 }
-.modal > section{
-    flex: 1;
+.popup_left,
+.popup_right {
+    flex: 1; /* 👉 이게 핵심 */
 }
-/*****************************************/
-.modal .image_section > img{
+
+/* 왼쪽 */
+.popup_left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.modal .form_section > form{
-    position: relative;
-    height: 100%;
-}
-
-.modal .form_section .select_container{
-    display: flex;
-    justify-content: space-between;
-    padding: 24px var(--modal-form-padding);
-    font-size: var(--font-body-lg-size);
-    align-items: center;
-    border-bottom: 1.2px solid var(--color-primary);
-}
-.modal .form_section .select_container .close_btn{
-    background: none;
-    border: none;
-    font-size: inherit;
-}
-/***********************************************/
-.modal .form_section .product_container{
-    height: 60%;
-    overflow-y: scroll;
-    padding: 0 var(--modal-form-padding);
-}
-.modal .form_section .product_container li{
-    padding: 28px 0;
-    border-bottom: 1px );
-}
-.modal .form_section .product_item{
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.modal .form_section .product_item input{
-    margin-right: 8px;
-}
-.modal .form_section .product_item label{
-    display: grid;
+/* 오른쪽 */
+.popup_right {
     flex: 1;
-    align-items: center;
-    grid-template-columns: 120px 1fr;
-    grid-template-areas:
-            "image title"
-            "image color"
-            "image price";
-    grid-column-gap: 16px;
-}
-.modal .form_section .product_item img{
-    grid-area: image;
-    height: 120px;
-}
-.modal .form_section .product_item b{
-    grid-area: title;
-    font-size: var(--font-body-lg-size);
-}
-.modal .form_section .product_item span{
-    grid-area: color;
-    font-size: var(--font-label-md-size);
-    color: dimgrey);
-}
-.modal .form_section .product_item strong{
-    grid-area: price;
-    font-size: var(--font-body-md-size);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.modal .form_section .product_size{
+/* 체크박스 공통 */
+input[type="checkbox"] {
+    display: none;
+}
+.check{
     display: flex;
-    padding: 12px 24px;
     justify-content: space-between;
-    border: 1px solid black;
-    background-color: white;
-    border-radius: 48px;
+}
+.check_box {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
 }
-.modal .total_price_container{
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    padding: 28px var(--modal-form-padding);
+
+/* 체크 상태 */
+input:checked + .check_box {
+    background: black;
+    border-color: black;
 }
 
-.modal .submit_container{
+input:checked + .check_box::after {
+    content: "";
     position: absolute;
-    bottom: 28px;
-    width: 100%;
-    padding: 0 var(--modal-form-padding);
+    top: 3px;
+    left: 6px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
-.modal .submit_container > button{
-    display: block;
-    width: 100%;
-    padding: 20px;
-    border: none;
+
+/* 상품 */
+.product_top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.product_top .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.product_top img {
+    width: 100px;
+}
+
+.product_list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 아코디언 */
+.accordion {
+    border: 1px solid #ddd;
     border-radius: 24px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: black;
+    overflow: hidden;
+    margin-top: 24px;
+}
+
+.accordion summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion[open] summary {
+    border-bottom: 1px solid #eee;
+}
+
+/* 사이즈 */
+.size_box {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.size_box button {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 가격 */
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+/* 버튼 */
+.cart_btn {
+    width: 100%;
+    height: 50px;
+    background: black;
     color: white;
+    border: none;
+    border-radius: 30px;
 }
