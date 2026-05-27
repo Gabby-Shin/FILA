@@ -21,7 +21,6 @@
 }
 /*********************************/
 
-
 .coupon_info_container{
     position: fixed;
     width: 100%;
@@ -61,6 +60,7 @@ header > .main_menu{
     display: flex;
     width: 100%;
     justify-content: center;
+    background-color: white;
 }
 header > .main_menu > li{
     padding: 4px 8px;
@@ -81,7 +81,7 @@ header > .main_menu > li > a{
     letter-spacing: var(--font-display-lg-letter-spacing);
     padding: 4px 0;
     &:hover{
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
     }
 }
 
@@ -100,8 +100,7 @@ nav > ul > li  > a{
 
 /********************************/
 header .sub_menu_container{
-    display: flex;
-    /*display: none;*/
+    display: none;
     justify-content: center;
     transform: translateY(100%);
     position: absolute;
@@ -144,4 +143,166 @@ header .sub_menu > li a {
     &:hover{
         text-decoration: underline;
     }
+}
+/*******************************/
+/* ... existing code ... */
+
+header .sub_menu > li a {
+    text-align: left;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+/*  메뉴 전용 정렬 */
+header > .main_menu > li:nth-child(4) .sub_menu_container {
+    gap: 32px;
+    align-items: flex-start;
+}
+
+/*메뉴 안의 각 박스 크기 */
+header > .main_menu > li:nth-child(4) .sub_menu_container > div {
+    width: 160px;
+}
+/* Tennis 메뉴 안의 이미지 박스 크기 */
+header > .main_menu > li:nth-child(4) .sub_menu_container > div:nth-child(4),
+header > .main_menu > li:nth-child(4) .sub_menu_container > div:nth-child(5) {
+    width: 260px;
+}
+
+/*  제목 영역 */
+header > .main_menu > li:nth-child(4) .sub_menu_title {
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* 이미지 링크 */
+header > .main_menu > li:nth-child(4) .sub_menu_title a {
+    display: block;
+}
+
+/*  이미지 크기 조절 */
+header > .main_menu > li:nth-child(4) .sub_menu_title img {
+    display: block;
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+/*  이미지 아래 글 */
+header > .main_menu > li:nth-child(4) .sub_menu {
+    display: block;
+}
+
+header > .main_menu > li:nth-child(4) .sub_menu > li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*  글 정렬 */
+header > .main_menu > li:nth-child(4) .sub_menu > li a {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* 사진 없는 FILA Heritage Collection 박스 */
+header > .main_menu > li:nth-child(4) .sub_menu_container > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* 사진 없는 FILA Heritage Collection 제목 */
+header > .main_menu > li:nth-child(4) .sub_menu_container > div:first-child .sub_menu_title {
+    margin-bottom: 12px;
+}
+
+header > .main_menu > li:nth-child(4) .sub_menu_container > div:first-child .sub_menu_title a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/**/
+header > .main_menu > li:nth-child(4) .sub_menu_container > div:first-child .sub_menu > li a {
+    margin-top: 0;
+}
+/****************************************/
+/* F.H.S 메뉴 전용 정렬 */
+header > .main_menu > li:last-child .sub_menu_container {
+    gap: 32px;
+    align-items: flex-start;
+}
+
+/* F.H.S 메뉴 안의 각 박스 크기 */
+header > .main_menu > li:last-child .sub_menu_container > div {
+    width: 260px;
+}
+
+/* F.H.S 제목 영역 */
+header > .main_menu > li:last-child .sub_menu_title {
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* F.H.S 이미지 링크 */
+header > .main_menu > li:last-child .sub_menu_title a {
+    display: block;
+}
+
+/* F.H.S 이미지 크기 조절 */
+header > .main_menu > li:last-child .sub_menu_title img {
+    display: block;
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+/* F.H.S 이미지 아래 글 */
+header > .main_menu > li:last-child .sub_menu {
+    display: block;
+}
+
+header > .main_menu > li:last-child .sub_menu > li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* F.H.S 글 정렬 */
+header > .main_menu > li:last-child .sub_menu > li a {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* 사진 없는 FILA Heritage Collection 박스 */
+header > .main_menu > li:last-child .sub_menu_container > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* 사진 없는 FILA Heritage Collection 제목 */
+header > .main_menu > li:last-child .sub_menu_container > div:first-child .sub_menu_title {
+    margin-bottom: 12px;
+}
+
+header > .main_menu > li:last-child .sub_menu_container > div:first-child .sub_menu_title a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 사진 없는 SS26 글 */
+header > .main_menu > li:last-child .sub_menu_container > div:first-child .sub_menu > li a {
+    margin-top: 0;
 }

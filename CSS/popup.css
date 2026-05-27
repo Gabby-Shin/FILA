@@ -16,6 +16,7 @@
     background: white;
     display: flex;
     overflow: hidden;
+    position:relative;
 }
 .popup_left,
 .popup_right {
@@ -31,31 +32,50 @@
 
 /* 오른쪽 */
 .popup_right {
-    flex: 1;
     padding: 20px;
-    display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 16px;
+    position: relative;
 }
 
-/* 체크박스 공통 */
 input[type="checkbox"] {
     display: none;
 }
-.check{
+
+.popup_right .check {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px 0;
+    border-bottom: 1px solid #ccc;
 }
+
+/* label 내부 요소 정렬 */
+.check_all {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
 .check_box {
     width: 18px;
     height: 18px;
     border: 1px solid #ccc;
     display: inline-block;
     position: relative;
+}
+
+/* 버튼만 오른쪽 끝으로 */
+.check .close_btn {
+    margin-left: auto;
+    background-color: white;
+    border: none;
     cursor: pointer;
 }
 
-/* 체크 상태 */
+/* 이제 + 선택자가 정확히 작동합니다! */
 input:checked + .check_box {
     background: black;
     border-color: black;
@@ -74,16 +94,21 @@ input:checked + .check_box::after {
 }
 
 /* 상품 */
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .product_top {
     display: flex;
     align-items: center;
     gap: 12px;
+    text-align: left;
 }
 .product_top .info{
     display: flex;
-    align-items: center;
+    text-align:left !important;
     flex-direction: column;
-    text-align: left;
 }
 .product_top img {
     width: 100px;
@@ -139,7 +164,7 @@ input:checked + .check_box::after {
 .price {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    margin-bottom: 24px;
 }
 
 /* 버튼 */
@@ -150,4 +175,58 @@ input:checked + .check_box::after {
     color: white;
     border: none;
     border-radius: 30px;
+}
+.total{
+    position:absolute;
+    bottom: 20px;
+    left:0;
+    width:100%;
+    padding: 0 20px;
+}
+.total{
+    position:absolute;
+    bottom: 20px;
+    left:0;
+    width:100%;
+    padding: 0 20px;
+}
+
+/* 처음에는 팝업 숨김 */
+.popup_overlay {
+    display: none;
+    z-index: 9999;
+}
+
+/* 팝업 열렸을 때 */
+.popup_overlay.active {
+    display: flex;
+}
+
+/* 팝업 우측 상단 닫기 버튼 */
+.popup_close_top {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* index.html에서 팝업 여는 이미지 */
+.open_popup {
+    display: block;
+    width: 300px;
+    cursor: pointer;
+    margin: 40px auto;
+}
+
+/* 기존 닫기 버튼도 클릭 가능하게 */
+.close_btn {
+    font-size: 18px;
 }

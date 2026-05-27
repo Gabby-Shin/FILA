@@ -12,3 +12,63 @@
     el.textContent = `${year}.${month}.${day}`;
 });
 });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const checkpointImages = document.querySelectorAll("#checkpoint .card .image_container");
+
+        if (checkpointImages.length === 0) {
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                });
+            },
+            {
+                threshold: 0.25
+            }
+        );
+
+        checkpointImages.forEach(function (image) {
+            observer.observe(image);
+        });
+    });
+    /******************************/
+    document.addEventListener("DOMContentLoaded", function () {
+        const checkpointImages = document.querySelectorAll("#checkpoint .card .image_container");
+        const modelCutImages = document.querySelectorAll("#model_cut .image_container_card");
+
+        const revealItems = [
+            ...checkpointImages,
+            ...modelCutImages
+        ];
+
+        if (revealItems.length === 0) {
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                });
+            },
+            {
+                threshold: 0.25
+            }
+        );
+
+        revealItems.forEach(function (item) {
+            observer.observe(item);
+        });
+    });

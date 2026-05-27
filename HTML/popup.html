@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/public.css">
     <link rel="stylesheet" href="../CSS/popup.css">
-
-
     <script src="https://kit.fontawesome.com/d19fdaba43.js" crossorigin="anonymous"></script>
     <title>Layout Popup Window</title>
 </head>
-
+<body>
 <div class="popup_overlay">
     <div class="popup">
 
@@ -22,15 +20,18 @@
         <div class="popup_right">
 
             <!-- 전체선택 -->
-            <label class="check_all">
-                <input type="checkbox" id="checkAll">
-            </label>
-            <div class="check">
-                <span class="check_box"></span>
-                전체선택
-                <button type="button" class="close_btn">
-                 <i class="fa-solid fa-xmark"></i>
-                </button>
+            <div>
+                <div class="check">
+                    <label class="check_all">
+                        <input type="checkbox" id="checkAll">
+                        <span class="check_box"></span>
+                        <span>전체선택</span>
+                    </label>
+
+                    <button type="button" class="close_btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
             </div>
 
             <!-- 상품 리스트 -->
@@ -104,13 +105,15 @@
             </div>
 
             <!-- 금액 -->
-            <div class="price">
-                <span>주문금액</span>
-                <b>0원</b>
-            </div>
+            <div class="total">
+                <div class="price">
+                    <span>주문금액</span>
+                    <b>0원</b>
+                </div>
 
-            <!-- 버튼 -->
-            <button class="cart_btn">장바구니 담기</button>
+                <!-- 버튼 -->
+                <button class="cart_btn">장바구니 담기</button>
+            </div>
 
         </div>
     </div>

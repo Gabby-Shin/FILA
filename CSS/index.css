@@ -1,3 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body{
+    overflow-x:hidden;
+}
+
+
 /* arrow_button의 기본 형태 */
 .arrow_button {
     height: 40px;
@@ -95,7 +106,7 @@ header > .main_menu > li{
 header > .main_menu > li > a{
     text-decoration: none; /*underline 제거*/
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     padding: 4px 0;
 }
@@ -151,83 +162,122 @@ main > .hero_section .hero_text{
     left: 50px;
     color: white;
 }
-main > .hero_section .hero_text > h2{
-    font-size: 32px;
+main > .hero_section .slide .hero_text h2{
+    font-size: 56px;
 }
+main > .hero_section .slide .hero_text p{
+    font-size: 24px;
+}
+/*********************************************/
 
-/***********************************************/
 
 .trending_section{
     padding: var(--main-x-padding) var(--main-y-padding);
 }
 
 h2{
-    margin-top: 20px;
+    margin-top: 24px;
     font-size: 60px;
     font-weight: bold;
-
 }
+
 .trending_section > div{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-right: 24px;
 }
+
 .trending_section > div .list{
     display: flex;
-    gap: 16px ;
+    gap: 16px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .trending_section > div .list > li > button{
     color: gray;
     border: none;
     background: none;
-    font-size: 14px;
+    font-size: 24px;
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: 0.3s;
 }
-.trending_section > div .list > li > button:hover{
+
+.trending_section > div .list > li > button:hover,
+.trending_section > div .list > li > button.active{
     border-bottom: 2px solid black;
     color: black;
 }
+
 .trending_section > div .button_container{
     gap: 16px;
     font-size: 18px;
     font-weight: bolder;
-    text-decoration: none; /*underline 제거*/
+    text-decoration: none;
 }
+
 .trending_section > div .button_container > button:hover{
     background-color: black;
+    font-weight: bold;
     color: white;
 }
 
-/*************************************************************/
 .trending_section .product_list ul{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
+.trending_section .product_list .image_container {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    overflow: hidden;
+}
+
 .trending_section .image_container > img{
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
+
 .product_list .list_info{
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 12px;
 }
+
+.product_list .list_info > span > p{
+    font-size: 10px;
+    color: gray;
+}
+
+.product_list span b{
+    font-size: 16px;
+    display: block;
+    color: var(--color-primary);
+}
+
+.product_list > ul > li a{
+    text-decoration: none;
+    color: inherit;
+}
+.product_list .list_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
 .product_list .list_info > span> p{
     font-size: 10px;
     color: gray;
 }
 .product_list span b{
-    font-size: 12px;
+    font-size: 20px;
     display: block;
     color: var(--color-primary);
 }
@@ -286,7 +336,7 @@ h2{
 /* 제목 */
 .edit_section .label_container > h2 {
     margin-right: 16px;
-    font-size: 150px;
+    font-size: 260px;
     font-weight: normal;
     color: white;
     position: absolute;
@@ -302,7 +352,10 @@ h2{
     color: white;
     padding: 8px 4px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 50px;
+}
+.edit_section .label_container > div > a:hover{
+    border-bottom: 2px solid white;
 }
 
 /**********************************/
@@ -314,7 +367,7 @@ h2{
 }
 .information1_section > h3{
     font-size: 60px;
-    margin-top: 100px;
+    margin-top: 96px;
     margin-bottom: 40px;
 }
 .information1_section > div{
@@ -396,10 +449,10 @@ h2{
 }
 /************************************************/
 .information3_section > p{
+    margin: 96px 0;
     text-align: center;
-    margin: var(--main-x-padding) var(--main-y-padding);
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
 }
 main .image_section1{
     display: flex;
@@ -540,13 +593,13 @@ footer .sns_nav a:hover{
 .info_nav .policy ul a{
     text-decoration: none;
     color: inherit;
-    font-size: 10px;
+    font-size: 12px;
 }
 footer .me_information{
     text-align: right;
     position: absolute;
     right: 48px;
-    font-size: 10px;
+    font-size: 12px;
 }
 footer hr{
     margin: 24px 0;
@@ -559,7 +612,7 @@ footer .corporate_container{
     display: flex;
 }
 footer .corp_information{
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 48px;
     margin-bottom: 56px;
 }
@@ -567,12 +620,9 @@ footer .corp_information{
     text-align: right;
     position: absolute;
     right: 48px;
-    font-size: 10px;
+    font-size: 12px;
 }
-
-
-
-
+/**********************************************/
 
 
 

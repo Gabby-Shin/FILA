@@ -15,7 +15,7 @@
 
 /******************************************/
 header{
-    margin-top: 50px;
+    margin-top: 48px;
     width: 100%;
     top: 30px;
     background-color: transparent;
@@ -25,8 +25,8 @@ header{
     padding: 8px 48px;
 }
 header > .home_btn > img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 header > .main_menu{
@@ -41,13 +41,13 @@ header > .main_menu > li{
 header > .main_menu > li > a{
     text-decoration: none; /*underline 제거*/
     color: black;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 500;
     line-height: var(--font-body-lg-line-height);
     letter-spacing: var(--font-display-lg-letter-spacing);
     padding: 4px 0;
     &:hover{
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid black;
     }
 }
 
@@ -60,7 +60,7 @@ nav > ul > li{
 }
 nav > ul > li  > a{
     color: black;
-    font-size: 30px;
+    font-size: 20px;
 }
 /**************************************************/
 .product_list_header{
@@ -74,11 +74,11 @@ nav > ul > li  > a{
     font-size: 14px;
     font-weight: 500;
     color: black;
-    margin-top: 100px;
+    margin-top: 96px;
 }
 .product_list_header > h1{
     font-size: 50px;
-    margin: 50px 0;
+    margin: 48px 0;
 }
 .filter_container > ul {
     display: flex;
@@ -99,7 +99,7 @@ nav > ul > li  > a{
 .button_container{
     display: flex;
     justify-content: flex-start;
-    gap: 24px;
+    gap: 12px;
 }
 .button_container > .filter_btn{
     background: black;
@@ -140,7 +140,7 @@ nav > ul > li  > a{
     justify-items: center;
 }
 .product_list > ul > li > a > .image_container{
-    margin-top: 100px;
+    margin-top: 96px;
     position: relative;
     width: 400px;
     overflow: hidden;
@@ -223,46 +223,67 @@ nav > ul > li  > a{
     display: block;
 }
 /*******************************************/
+/* ... existing code ... */
+
 .pagination{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 100px 0;
+    gap: 8px;
 }
-.pagination > a > button{
-    border-radius: 20px;
+
+.pagination button{
+    border-radius: 50%;
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     background: white;
-    padding: 8px 12px;
-    gap: 4px;
+    color: black;
     cursor: pointer;
-    width: 60px;
-    gap: 10px;
+    width: 44px;
+    height: 44px;
 }
+
+/* 선택된 페이지 버튼 */
+.pagination .pagination_btn.active{
+    background: black;
+    color: white;
+}
+
+/* 화살표 버튼 */
+.pagination .pagination_arrow{
+    background: white;
+    color: black;
+}
+
+/* hover 효과 */
+.pagination button:hover{
+    background: black;
+    color: white;
+}
+
+/* ... existing code ... */
 
 
 /**************************************/
 footer{
-    background-color: black;
+    background: black;
     color: white;
-    padding: 20px 50px;
 }
-footer > div{
+footer .footer_container {
     display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 footer .site_nav{
     display: flex;
-    margin-top: 0;
-    margin-bottom: 56px;
+    margin: 56px 48px;
 }
 footer .site_nav > div{
     width: 220px;
 }
 footer .site_nav h4{
     margin-bottom: 12px;
-    font-size: var(--font-body-md-size);
+    font-size: 14px;
 }
 footer .site_nav ul{
     display: flex;
@@ -271,68 +292,76 @@ footer .site_nav ul{
 footer .site_nav li{
     margin-bottom: 4px;
     font-size: 12px;
-    color: var(--color-primary-fixed-dim);
 }
-
 footer .site_nav li a{
-    color: var(--color-primary-fixed);
+    text-decoration: none;
+    color: inherit;
 }
-
+footer .site_nav li a:hover{
+    border-bottom: 1px solid white;
+}
 
 footer .sns_nav ul{
     display: flex;
-}
-footer .sns_nav li{
-    margin-right: 12px;
+    position: absolute;
+    right: 32px;
+    top: 56px;
 }
 footer .sns_nav a{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    width: 32px;
-    height: 32px;
-    background-color: white;
-    border-radius: 50%;
+    width: 16px;
+    height: 16px;
     text-decoration: none;
-    color: black;
+    transition: 0.3s;
 }
-footer > div > div{
+footer .sns_nav a:hover{
+    transform: scale(1.2);
+}
+.info_nav{
+    position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+}
+.info_nav .policy ul li{
+    display: inline-flex;
+    margin-left: 48px;
+}
+.info_nav .policy ul a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
 }
 footer .me_information{
-    margin-top: auto;
     text-align: right;
-}
-
-footer .me_information .name{
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 4px;
-}
-footer .me_information .email{
+    position: absolute;
+    right: 48px;
     font-size: 12px;
 }
-footer .me_information .text{
-    font-size: 12px;
-}
-
 footer hr{
     margin: 24px 0;
+    border: none;        /* 기본 테두리 제거 */
+    height: 0.5px;         /* 두께 */
+    background-color: white;   /*선이아니라 블록이라서 백그라운드컬러*/
 }
-
-.corp_information{
+footer .corporate_container{
+    position: relative;
+    display: flex;
+}
+footer .corp_information{
     font-size: 12px;
+    margin-left: 48px;
     margin-bottom: 56px;
-
 }
 .site_information{
-    font-size: 12px;
     text-align: right;
-}
-footer > section .policy{
-    color: white;
+    position: absolute;
+    right: 48px;
+    font-size: 10px;
 }
 /* ***************************/
 #checkpoint .card{
