@@ -4,233 +4,150 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7e60162-f0d7-4de9-bb76-9d3d19cb909a" name="Changes" comment="260522" />
+    <list default="true" id="251b5e1c-4022-4e05-8224-bd41ce46eb6f" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Gabby shin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-<<<<<<< HEAD
-    <option name="cachedIndexableFilesCount" value="78" />
+    <option name="cachedIndexableFilesCount" value="101" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
-=======
-    <option name="cachedIndexableFilesCount" value="79" />
-    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
-  </component>
->>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Gabby-Shin"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Gabby-Shin&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Gabby-Shin/FILA.git",
-    "accountId": "0cc8fc38-b5f6-44a2-bc86-4f396474361b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gabby-Shin/FILA.git&quot;,
+    &quot;accountId&quot;: &quot;0d29a6f8-2686-471e-b250-cd1da3818838&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-<<<<<<< HEAD
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000407737450683" />
-      <entry key="S2" value="1.080043403816402" />
-      <entry key="S5" value="1.4056171611262063" />
-      <entry key="S10" value="1.9210084841201318" />
-      <entry key="S30" value="3.3599212028560284" />
-      <entry key="S60" value="4.324134423370664" />
-      <entry key="M2" value="5.18164608718833" />
-      <entry key="M5" value="9.472720484344316" />
-      <entry key="M10" value="20.223137337135814" />
-      <entry key="M15" value="30.555746901411943" />
-      <entry key="M30" value="57.84463339518004" />
-      <entry key="H1" value="106.93812974571291" />
-      <entry key="H2" value="188.46174031297605" />
-      <entry key="H4" value="283.6387116946494" />
-      <entry key="D1" value="431.86428460528975" />
-      <entry key="W1" value="467.6522499698843" />
+      <entry key="MS500" value="1.0000001304534232" />
+      <entry key="S2" value="1.0632577829664982" />
+      <entry key="S5" value="1.8703046924557176" />
+      <entry key="S10" value="3.0859059381218725" />
+      <entry key="S30" value="4.735990995832617" />
+      <entry key="S60" value="5.322066760921976" />
+      <entry key="M2" value="5.671427641329675" />
+      <entry key="M5" value="7.421331896571109" />
+      <entry key="M10" value="16.213584961130117" />
+      <entry key="M15" value="28.25756815032728" />
+      <entry key="M30" value="64.14917918887456" />
+      <entry key="H1" value="114.93421297697965" />
+      <entry key="H2" value="164.41026822707929" />
+      <entry key="H4" value="200.53084657142503" />
+      <entry key="D1" value="239.13780388180774" />
+      <entry key="W1" value="246.70819415801896" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0893697411E-313" />
-      <entry key="MS500" value="2.5552597941119273E-63" />
-      <entry key="S2" value="2.2483233216308137E-16" />
-      <entry key="S5" value="5.504824860312901E-7" />
-      <entry key="S10" value="7.419450694163888E-4" />
-      <entry key="S30" value="0.09052960654639271" />
-      <entry key="S60" value="0.30110301422664915" />
-      <entry key="M2" value="0.5895007127620407" />
-      <entry key="M5" value="1.9064977807497139" />
-      <entry key="M10" value="4.653934891207574" />
-      <entry key="M15" value="6.948463322457534" />
-      <entry key="M30" value="12.265024622293081" />
-      <entry key="H1" value="21.316828948243888" />
-      <entry key="H2" value="35.24568012902172" />
-      <entry key="H4" value="49.8724820234129" />
-      <entry key="D1" value="70.47681502623503" />
-      <entry key="W1" value="75.17564191117667" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="4.067693276825594E-157" />
+      <entry key="S5" value="2.7780450172989877E-63" />
+      <entry key="S10" value="5.270716286520253E-32" />
+      <entry key="S30" value="3.7493548606613565E-11" />
+      <entry key="S60" value="6.123218376150914E-6" />
+      <entry key="M2" value="0.0024810002748313956" />
+      <entry key="M5" value="0.10573223963095266" />
+      <entry key="M10" value="0.5404284952931323" />
+      <entry key="M15" value="1.129743125858966" />
+      <entry key="M30" value="3.1992735933107364" />
+      <entry key="H1" value="6.808872861269437" />
+      <entry key="H2" value="10.770311845056483" />
+      <entry key="H4" value="13.830771063163741" />
+      <entry key="D1" value="17.211139488509456" />
+      <entry key="W1" value="17.884741711787584" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.41465977290722084" />
-      <entry key="MS500" value="0.8386032399327219" />
-      <entry key="S2" value="1.0340111511850014" />
-      <entry key="S5" value="1.3815607764824653" />
-      <entry key="S10" value="1.9028602676786373" />
-      <entry key="S30" value="3.430459841651697" />
-      <entry key="S60" value="4.607358010996036" />
-      <entry key="M2" value="5.757309859026354" />
-      <entry key="M5" value="11.359601045708816" />
-      <entry key="M10" value="24.84959257289137" />
-      <entry key="M15" value="37.474855080735885" />
-      <entry key="M30" value="70.08044830731122" />
-      <entry key="H1" value="128.22659690686177" />
-      <entry key="H2" value="223.68192112227283" />
-      <entry key="H4" value="333.49217282153245" />
-      <entry key="D1" value="502.33638777245943" />
-      <entry key="W1" value="542.8271672138616" />
+      <entry key="MS100" value="0.8066417592221263" />
+      <entry key="MS500" value="0.9579353477771866" />
+      <entry key="S2" value="1.0524620676779264" />
+      <entry key="S5" value="1.865413543801518" />
+      <entry key="S10" value="3.083036805079302" />
+      <entry key="S30" value="4.734843448795353" />
+      <entry key="S60" value="5.321464429273399" />
+      <entry key="M2" value="5.673447791652307" />
+      <entry key="M5" value="7.524308069380496" />
+      <entry key="M10" value="16.74633387006009" />
+      <entry key="M15" value="29.375588932679275" />
+      <entry key="M30" value="67.33018692702832" />
+      <entry key="H1" value="121.72319817903005" />
+      <entry key="H2" value="175.1648256549516" />
+      <entry key="H4" value="214.3515154431243" />
+      <entry key="D1" value="256.34685226175753" />
+      <entry key="W1" value="264.59262557312695" />
     </decayedShown>
   </component>
-=======
->>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="3E2YozazBQfB1898GQx4Slcb4oC" />
+  <component name="ProjectId" id="3ENSqD8n62TDxXyJkvii6HOjBrh" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-<<<<<<< HEAD
-    "DefaultHtmlFileTemplate": "HTML File",
-=======
->>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-<<<<<<< HEAD
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/d/Desktop/Gabby/FILA",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-=======
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
->>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/d/Desktop/Gabby/FILA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-<<<<<<< HEAD
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\d\Desktop\Gabby\FILA - list\CSS\product" />
-      <recent name="C:\Users\d\Desktop\Gabby\FILA - list\HTML\product" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\d\Desktop\Gabby\FILA\JS\layout" />
-      <recent name="C:\Users\d\Desktop\Gabby\FILA\HTML\layout" />
-      <recent name="C:\Users\d\Downloads\Clone-master\FILA\CSS\product" />
-      <recent name="C:\Users\d\Downloads\Clone-master\FILA\HTML\product" />
-    </key>
-  </component>
-=======
->>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.23567.141" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="f7e60162-f0d7-4de9-bb76-9d3d19cb909a" name="Changes" comment="" />
-      <created>1779378311515</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1779378311515</updated>
-      <workItem from="1779378313216" duration="98000" />
-      <workItem from="1779378414911" duration="515000" />
-    </task>
-    <task id="LOCAL-00001" summary="260522">
-      <option name="closed" value="true" />
-      <created>1779378643803</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1779378643803</updated>
-    </task>
-<<<<<<< HEAD
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="c5cc5c31-2f0b-4147-80c6-6d1689f14d03" name="변경" comment="260520" />
-      <created>1779321473654</created>
+      <changelist id="251b5e1c-4022-4e05-8224-bd41ce46eb6f" name="변경" comment="" />
+      <created>1780017722848</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1779321473654</updated>
-      <workItem from="1779321474666" duration="193000" />
-      <workItem from="1779321724609" duration="1962000" />
-      <workItem from="1779329132067" duration="14000" />
-      <workItem from="1779341442191" duration="106000" />
-      <workItem from="1779341558631" duration="132000" />
-      <workItem from="1779341701902" duration="129000" />
-      <workItem from="1779341842993" duration="11343000" />
-      <workItem from="1779407671244" duration="733000" />
-      <workItem from="1779427447937" duration="11247000" />
+      <updated>1780017722848</updated>
+      <workItem from="1780017723973" duration="171000" />
+      <workItem from="1780017959154" duration="143000" />
+      <workItem from="1780018184403" duration="10284000" />
+      <workItem from="1780040013535" duration="4305000" />
     </task>
-    <task id="LOCAL-00002" summary="260521_repackage">
-      <option name="closed" value="true" />
-      <created>1779321778792</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1779321778792</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
-=======
-    <option name="localTasksCounter" value="2" />
->>>>>>> f61c0196d035df6ab827aa44b24139b9cd5258dc
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="260522" />
-    <option name="LAST_COMMIT_MESSAGE" value="260522" />
   </component>
 </project>
