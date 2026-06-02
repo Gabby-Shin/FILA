@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="251b5e1c-4022-4e05-8224-bd41ce46eb6f" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/CSS/user/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/user/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/layout/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/layout/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/product/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/product/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/product/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/product/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/product/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +22,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="101" />
+    <option name="cachedIndexableFilesCount" value="108" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +46,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Gabby-Shin/FILA.git",
-    "accountId": "0cc8fc38-b5f6-44a2-bc86-4f396474361b"
+    "accountId": "0d29a6f8-2686-471e-b250-cd1da3818838"
   }
 }]]></component>
   <component name="McpProjectServerCommands">
@@ -38,73 +55,77 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000001304534232" />
-      <entry key="S2" value="1.0632577829664982" />
-      <entry key="S5" value="1.8703046924557176" />
-      <entry key="S10" value="3.0859059381218725" />
-      <entry key="S30" value="4.735990995832617" />
-      <entry key="S60" value="5.322066760921976" />
-      <entry key="M2" value="5.671427641329675" />
-      <entry key="M5" value="7.421331896571109" />
-      <entry key="M10" value="16.213584961130117" />
-      <entry key="M15" value="28.25756815032728" />
-      <entry key="M30" value="64.14917918887456" />
-      <entry key="H1" value="114.93421297697965" />
-      <entry key="H2" value="164.41026822707929" />
-      <entry key="H4" value="200.53084657142503" />
-      <entry key="D1" value="239.13780388180774" />
-      <entry key="W1" value="246.70819415801896" />
+      <entry key="MS100" value="1.0000000000000024" />
+      <entry key="MS500" value="1.0011890621706232" />
+      <entry key="S2" value="1.2011617333226305" />
+      <entry key="S5" value="1.7726647142545584" />
+      <entry key="S10" value="2.471116712304603" />
+      <entry key="S30" value="4.3039959067757945" />
+      <entry key="S60" value="6.466718277896149" />
+      <entry key="M2" value="9.627080168945408" />
+      <entry key="M5" value="16.579129428257264" />
+      <entry key="M10" value="29.310699012503026" />
+      <entry key="M15" value="43.28128219883228" />
+      <entry key="M30" value="85.82197714372792" />
+      <entry key="H1" value="158.9570707996829" />
+      <entry key="H2" value="256.7714023957788" />
+      <entry key="H4" value="350.18967390332915" />
+      <entry key="D1" value="473.8740086463555" />
+      <entry key="W1" value="501.2273769360295" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="4.067693276825594E-157" />
-      <entry key="S5" value="2.7780450172989877E-63" />
-      <entry key="S10" value="5.270716286520253E-32" />
-      <entry key="S30" value="3.7493548606613565E-11" />
-      <entry key="S60" value="6.123218376150914E-6" />
-      <entry key="M2" value="0.0024810002748313956" />
-      <entry key="M5" value="0.10573223963095266" />
-      <entry key="M10" value="0.5404284952931323" />
-      <entry key="M15" value="1.129743125858966" />
-      <entry key="M30" value="3.1992735933107364" />
-      <entry key="H1" value="6.808872861269437" />
-      <entry key="H2" value="10.770311845056483" />
-      <entry key="H4" value="13.830771063163741" />
-      <entry key="D1" value="17.211139488509456" />
-      <entry key="W1" value="17.884741711787584" />
+      <entry key="MS100" value="2.1005264125891502E-73" />
+      <entry key="MS500" value="2.9138395205902345E-15" />
+      <entry key="S2" value="2.3233594610886073E-4" />
+      <entry key="S5" value="0.03519221181720201" />
+      <entry key="S10" value="0.18759587373120207" />
+      <entry key="S30" value="0.5728533147596849" />
+      <entry key="S60" value="0.7765753200979223" />
+      <entry key="M2" value="1.0128455461622161" />
+      <entry key="M5" value="1.5537626116187362" />
+      <entry key="M10" value="2.6388633000248327" />
+      <entry key="M15" value="4.043880067184066" />
+      <entry key="M30" value="8.493487631869646" />
+      <entry key="H1" value="15.419714407499594" />
+      <entry key="H2" value="23.92127914686093" />
+      <entry key="H4" value="31.833964221178658" />
+      <entry key="D1" value="42.280158851813354" />
+      <entry key="W1" value="44.59568995737916" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8066417592221263" />
-      <entry key="MS500" value="0.9579353477771866" />
-      <entry key="S2" value="1.0524620676779264" />
-      <entry key="S5" value="1.865413543801518" />
-      <entry key="S10" value="3.083036805079302" />
-      <entry key="S30" value="4.734843448795353" />
-      <entry key="S60" value="5.321464429273399" />
-      <entry key="M2" value="5.673447791652307" />
-      <entry key="M5" value="7.524308069380496" />
-      <entry key="M10" value="16.74633387006009" />
-      <entry key="M15" value="29.375588932679275" />
-      <entry key="M30" value="67.33018692702832" />
-      <entry key="H1" value="121.72319817903005" />
-      <entry key="H2" value="175.1648256549516" />
-      <entry key="H4" value="214.3515154431243" />
-      <entry key="D1" value="256.34685226175753" />
-      <entry key="W1" value="264.59262557312695" />
+      <entry key="MS100" value="2.3639656031629552E-11" />
+      <entry key="MS500" value="0.0075125078611116836" />
+      <entry key="S2" value="0.3709716726197513" />
+      <entry key="S5" value="1.190648649565941" />
+      <entry key="S10" value="2.17815301929008" />
+      <entry key="S30" value="4.588983879637855" />
+      <entry key="S60" value="7.048930839024585" />
+      <entry key="M2" value="10.50828137380676" />
+      <entry key="M5" value="18.05623875980835" />
+      <entry key="M10" value="31.893565561974263" />
+      <entry key="M15" value="47.27333719398057" />
+      <entry key="M30" value="94.26611156608354" />
+      <entry key="H1" value="174.33244983679583" />
+      <entry key="H2" value="280.65786485991276" />
+      <entry key="H4" value="382.00027322780625" />
+      <entry key="D1" value="516.1489620348466" />
+      <entry key="W1" value="545.8222817915621" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="3ENSqD8n62TDxXyJkvii6HOjBrh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -116,6 +137,7 @@
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/blanc/OneDrive/바탕 화면/Gabby/FILA",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,7 +151,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
       </set>
     </attachedChunks>
   </component>
@@ -145,6 +167,7 @@
       <workItem from="1780018184403" duration="10284000" />
       <workItem from="1780040013535" duration="4305000" />
       <workItem from="1780317590816" duration="473000" />
+      <workItem from="1780357185248" duration="8779000" />
     </task>
     <servers />
   </component>

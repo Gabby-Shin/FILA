@@ -70,12 +70,11 @@ header > .main_menu > li{
         display: flex;
     }
 
-    /* 폰트넣기*/
 }
 header > .main_menu > li > a{
     text-decoration: none; /*underline 제거*/
     color: black;
-    font-size: var(--font-body-lg-size);
+    font-size: var(--font-body-md-size);
     font-weight: 500;
     line-height: var(--font-body-lg-line-height);
     letter-spacing: var(--font-display-lg-letter-spacing);
