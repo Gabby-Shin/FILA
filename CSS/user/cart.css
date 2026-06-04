@@ -46,6 +46,14 @@
 .cart_select_area {
     padding: 20px 0;
 }
+.cart_select_area label input[type="checkbox"]:checked {
+    accent-color: deeppink;
+    transform: scale(1.1);
+
+}
+.cart_item input[type="checkbox"]:checked {
+    accent-color: deeppink;
+}
 
 .cart_select_area label {
     display: inline-flex;
@@ -86,6 +94,7 @@
 .cart_item .cart_item_info{
     flex: 1;
     min-width: 0;
+    position: relative;
 }
 .cart_summary{
     grid-column: 2 / 3;
@@ -124,13 +133,14 @@
     color: gray;
     margin-bottom: 16px;
 }
-.cart_item .cart_item_info.quantity{
+.cart_item .cart_item_info .quantity{
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: white;
     width: fit-content;
-    padding: 5px 10px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .quantity button {
     background: none;
