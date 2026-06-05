@@ -1,3 +1,4 @@
+@media screen and (max-width: 2000px) {
     * {
         margin: 0;
         padding: 0;
@@ -144,6 +145,11 @@
         font-size: 20px;
     }
 
+    nav > ul > li > .menu_btn {
+        display: none;
+
+    }
+
     /*******************************************************/
     /*꽉채우고싶을때 공식
     main > .hero section > video{
@@ -190,11 +196,10 @@
 
     /*********************************************/
     .trending_section {
-        padding:  var(--main-y-padding) var(--main-x-padding);
+        padding: var(--main-y-padding) var(--main-x-padding);
     }
 
     h2 {
-        margin-top: 24px;
         font-size: 60px;
         font-weight: bold;
     }
@@ -394,6 +399,7 @@
         font-size: 60px;
         margin-top: 96px;
         margin-bottom: 40px;
+        margin-left: 32px;
     }
 
     .information1_section > div {
@@ -536,1501 +542,1202 @@
     }
 
     .information4_section .slide_wrapper {
-        overflow: hidden; /* 보이는영역만유지*/
+        overflow: hidden;
         width: 100%;
     }
 
     .information4_section .slide_container {
         display: flex;
-        flex-wrap: nowrap; /* 줄바꿈금지*/
-        scroll-snap-type: x mandatory; /*스크롤 멈출 때, 카드에 딱 맞춰서 멈춤*/
-        scrollbar-width: none; /*스크롤 바 숨김*/
-        scroll-behavior: smooth;
-        overflow-x: auto; /*가로 넘치면 스크롤 생김*/
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        scroll-behavior: auto;
         cursor: grab;
+        user-select: none;
+        -ms-overflow-style: none;
+    }
+
+    .information4_section .slide_container.dragging {
+        cursor: grabbing;
+        scroll-behavior: auto;
     }
 
     .information4_section .slide_container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
-    }
-
-    .information4_section .slide_container > li {
-        flex: 0 0 480px; /*flex: [grow] [shrink] [basis]; 커지지말고 줄어들지말고 기본*/
-        flex-shrink: 0; /*절대줄어들지않음*/
-        cursor: pointer;
-    }
-
-    .information4_section .slide_container > li:not(:last-child) {
-        margin-right: 16px; /*마지막빼고 오른쪽 여백*/
-    }
-
-    .information4_section .slide_container > li > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    /**************************************/
-    footer {
-        background: black;
-        color: white;
-    }
-
-    footer .footer_container {
-        display: flex;
-        position: relative;
-    }
-
-    footer .site_nav {
-        display: flex;
-        margin: 56px 48px;
-    }
-
-    footer .site_nav > div {
-        width: 220px;
-    }
-
-    footer .site_nav h4 {
-        margin-bottom: 12px;
-        font-size: 14px;
-    }
-
-    footer .site_nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .site_nav li {
-        margin-bottom: 4px;
-        font-size: 12px;
-    }
-
-    footer .site_nav li a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    footer .site_nav li a:hover {
-        border-bottom: 1px solid white;
-    }
-
-    footer .sns_nav ul {
-        display: flex;
-        position: absolute;
-        right: 32px;
-        top: 56px;
-    }
-
-    footer .sns_nav a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        width: 16px;
-        height: 16px;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    footer .sns_nav a:hover {
-        transform: scale(1.2);
-    }
-
-    .info_nav {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 56px;
-    }
-
-    .info_nav .policy ul li {
-        display: inline-flex;
-        margin-left: 48px;
-    }
-
-    .info_nav .policy ul a {
-        text-decoration: none;
-        color: inherit;
-        font-size: 12px;
-    }
-
-    footer .me_information {
-        text-align: right;
-        position: absolute;
-        right: 48px;
-        font-size: 12px;
-    }
-
-    footer hr {
-        margin: 24px 0;
-        border: none; /* 기본 테두리 제거 */
-        height: 0.5px; /* 두께 */
-        background-color: white; /*선이아니라 블록이라서 백그라운드컬러*/
-    }
-
-    footer .corporate_container {
-        position: relative;
-        display: flex;
-    }
-
-    footer .corp_information {
-        font-size: 12px;
-        margin-left: 48px;
-        margin-bottom: 56px;
-    }
-
-    .site_information {
-        text-align: right;
-        position: absolute;
-        right: 48px;
-        font-size: 12px;
-    }
-/**********************************************/
-
-
-@media screen and (max-width: 1024px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    html, body {
-        overflow-x: hidden;
-    }
-
-
-    /* arrow_button의 기본 형태 */
-    .arrow_button {
-        height: 40px;
-        width: 40px;
-        padding: 4px 32px;
-        cursor: pointer;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-    }
-
-    /* border 가 있는 형태 */
-    .arrow_button.border {
-        border: 1px solid var(--color-deep-black);
-    }
-
-    /* rounded 형태 */
-    .arrow_button.rounded {
-        border-radius: 24px;
-    }
-
-    :root {
-        --main-x-padding: 32px;
-        --main-y-padding: 52px;
-        /*h1 {
-        color: var(--main-color);
-        } 이런식으로 루트 */
-    }
-
-    /*********************************/
-    .coupon_info_container {
-        position: fixed;
-        width: 100%;
-        height: 30px;
-        background-color: blue;
-        z-index: 9999;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .coupon_info_container > a {
-        font-size: 12px;
-        text-align: center;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        border-bottom: 2px solid transparent;
-    }
-
-    .coupon_info_container > a:hover {
-        border-bottom: 2px solid var(--color-pure-white);
-    }
-
-    .coupon_info_container > button {
-        position: absolute;
-        right: 20px;
-        background: unset;
-        border: none;
-        line-height: 30px;
-        color: dimgray;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 12px;
-    }
-
-    .coupon_info_container > button:hover {
-        color: white;
-    }
-
-    /******************************************/
-    header {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        top: 30px;
-        background-color: transparent;
-        padding: 8px var(--main-x-padding);
-        z-index: 10;
-    }
-
-    header > a {
-        flex: 1;
-        justify-content: flex-start;
-    }
-
-    header > .home_btn > img {
-        width: 50px;
-        height: 50px;
-    }
-
-    header > .main_menu {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-    }
-
-    header > .main_menu > li {
-        padding: 4px 8px;
-        cursor: pointer;
-    }
-
-    header > .main_menu > li > a {
-        text-decoration: none; /*underline 제거*/
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 4px 0;
-    }
-
-    header > .main_menu > li > a:hover {
-        border-bottom: 2px solid var(--color-pure-white);
-    }
-
-    header > nav {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-    }
-
-    header > nav > ul {
-        display: flex;
-    }
-
-    nav > ul > li {
-        margin: 0 12px;
-    }
-
-    nav > ul > li > a {
-        color: white;
-        font-size: 20px;
-    }
-
-    /*******************************************************/
-    /*꽉채우고싶을때 공식
-    main > .hero section > video{
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        align-items: center;*/
-    main > .hero_section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main > .hero_section {
-        background-color: white;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    main > .hero_section > video {
-        width: 100%; /*부모에 딱 맞춤*/
-        height: 100%;
-        display: block;
-        object-fit: cover; /*영역꽉채움*/
-    }
-
-    main > .hero_section .hero_text {
-
-        position: absolute;
-        bottom: 50px;
-        left: 50px;
-        color: white;
-    }
-
-    main > .hero_section .slide .hero_text h2 {
-        font-size: 56px;
-    }
-
-    main > .hero_section .slide .hero_text p {
-        font-size: 24px;
-    }
-
-    /*********************************************/
-    .trending_section {
-        padding:  var(--main-y-padding) var(--main-x-padding);
-    }
-
-    h2 {
-        margin-top: 24px;
-        font-size: 60px;
-        font-weight: bold;
-    }
-
-    .trending_section > div {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 24px;
-        margin-top: 24px;
-        margin-right: 24px;
-    }
-
-    .trending_section > div .list {
-        display: flex;
-        gap: 16px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .trending_section > div .list > li > button {
-        color: gray;
-        border: none;
-        background: none;
-        font-size: 24px;
-        cursor: pointer;
-        border-bottom: 2px solid transparent;
-        transition: 0.3s;
-    }
-
-    .trending_section > div .list > li > button:hover,
-    .trending_section > div .list > li > button.active {
-        border-bottom: 2px solid black;
-        color: black;
-    }
-
-    .trending_section > div .button_container {
-        gap: 16px;
-        font-size: 18px;
-        font-weight: bolder;
-        text-decoration: none;
-    }
-
-    .trending_section > div .button_container > button:hover {
-        background-color: black;
-        font-weight: bold;
-        color: white;
-    }
-
-    .trending_section .product_list ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-
-    .trending_section .product_list .image_container {
-        width: 100%;
-        aspect-ratio: 1 / 1.25;
-        overflow: hidden;
-    }
-
-    .trending_section .image_container > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .product_list .list_info {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        font-size: 12px;
-    }
-
-    .product_list .list_info > span > p {
-        font-size: 10px;
-        color: gray;
-    }
-
-    .product_list span b {
-        font-size: 16px;
-        display: block;
-        color: var(--color-primary);
-    }
-
-    .product_list > ul > li a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .product_list .list_info {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        font-size: 16px;
-    }
-
-    .product_list .list_info > span > p {
-        font-size: 10px;
-        color: gray;
-    }
-
-    .product_list span b {
-        font-size: 20px;
-        display: block;
-        color: var(--color-primary);
-    }
-
-    .product_list > ul > li a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    /**************************/
-    /* 전체 섹션 */
-    .edit_section {
-        display: flex; /* 이미지 + 텍스트 가로 배치 */
-        align-items: center; /* 세로 가운데 정렬 */
-        background: black;
-        padding-top: 40px;
-        position: relative;
-    }
-
-    /* 왼쪽 이미지 영역 */
-    .image_container {
-        position: relative;
-        flex: 1;
-    }
-
-    /* 메인 이미지 */
-    .image_container .main {
-        width: 100%;
-        max-width: 700px;
-        height: 1000px;
-        object-fit: contain;
-        display: block;
-        padding: var(--main-x-padding);
-    }
-
-    /* 겹칠 이미지 */
-    .image_container .sub {
-        position: absolute;
-        height: 400px;
-        width: 400px;
-        top: 300px;
-        right: -60px;
-    }
-
-    /* 오른쪽 텍스트 영역 */
-    .image_container {
-        flex: 1;
-    }
-
-    .edit_section .label_container {
-        flex: 1;
-        display: flex;
-        flex-direction: column; /*세로방향으로배치*/
-        justify-content: space-between;
-        align-items: flex-end
-    }
-
-    /* 제목 */
-    .edit_section .label_container > h2 {
-        margin-right: 16px;
-        font-size: 120px;
-        font-weight: normal;
-        color: white;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .edit_section .label_container > div {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
-    .edit_section .label_container > div > a {
-        display: inline-block;
-        color: white;
-        padding: 8px 4px;
-        text-decoration: none;
-        font-size: 50px;
-    }
-
-    .edit_section .label_container > div > a:hover {
-        border-bottom: 2px solid white;
-    }
-
-    /**********************************/
-    .information1_section {
-        margin: var(--main-y-padding) auto;
-        width: 100%;
-    }
-
-    .information1_section > h3 {
-        font-size: 60px;
-        margin-top: 96px;
-        margin-bottom: 40px;
-    }
-
-    .information1_section > div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 800px;
-        gap: 16px;
-    }
-
-    .information1_section a {
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-
-    .information1_section .information {
-        position: absolute;
-        bottom: 0;
-        color: white;
-        padding: 20px;
-    }
-
-    .information1_section .information > h4 {
-        font-size: 40px;
-        font-weight: normal;
-        margin-bottom: 10px;
-    }
-
-    .information1_section .information > p {
-        font-size: 18px;
-    }
-
-    .information1_section button {
-        position: absolute;
-        right: 32px;
-        bottom: 32px;
-        background-color: white;
-    }
-
-    /******************************************************/
-    .information2_section {
-        background-color: black;
-        display: flex;
-        width: 100%;
-        height: 500px;
-        margin: 0 auto;
-    }
-
-    .information2_section .info2_container {
-        display: flex;
-        flex: 3;
-        position: relative;
-    }
-
-    .information2_section .info2_container > img {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        margin-left: 32px;
-        margin-top: 32px;
-    }
-
-    .information2_section .info2_container > p {
-        font-size: 32px;
-        position: absolute;
-        color: white;
-        top: 50%;
-        left: 32px;
-        transform: translateY(-50%);
-    }
-
-    .information2_section .info2_container .arrow_button {
-        position: absolute;
-        bottom: 16px;
-        left: 32px;
-        color: black;
-        background-color: white;
-    }
-
-    /***************************************************/
-    .information2_section .info2_container2 {
-        display: flex;
-        flex: 2;
-    }
-
-    .information2_section .info2_container2 > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /************************************************/
-    .information3_section > p {
-        margin: 96px 0;
-        text-align: center;
-        font-size: 24px;
-        font-weight: normal;
-    }
-
-    main .image_section1 {
-        display: flex;
-        gap: 8px;
-    }
-
-    main .image_section1 > div {
-        flex: 1;
-    }
-
-    main .image_section1 img {
-        width: 100%;
-    }
-
-
-    /**********************************************/
-    .information4_section {
-        padding: var(--main-x-padding) var(--main-y-padding);
-        background-color: black;
-        margin: 80px 0;
-    }
-
-    .information4_section > div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 52px;
-        align-items: center;
-    }
-
-    .information4_section > div > button {
-        display: flex;
-        justify-content: space-between;
-        width: 150px;
-        font-size: 16px;
-        background-color: white;
-    }
-
-    .information4_section h2 {
-        font-size: var(--font-display-lg-size);
-        color: white;
-    }
-
-    .information4_section .slide_wrapper {
-        overflow: hidden; /* 보이는영역만유지*/
-        width: 100%;
-    }
-
-    .information4_section .slide_container {
-        display: flex;
-        flex-wrap: nowrap; /* 줄바꿈금지*/
-        scroll-snap-type: x mandatory; /*스크롤 멈출 때, 카드에 딱 맞춰서 멈춤*/
-        scrollbar-width: none; /*스크롤 바 숨김*/
-        scroll-behavior: smooth;
-        overflow-x: auto; /*가로 넘치면 스크롤 생김*/
-        cursor: grab;
-    }
-
-    .information4_section .slide_container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
-    }
-
-    .information4_section .slide_container > li {
-        flex: 0 0 480px; /*flex: [grow] [shrink] [basis]; 커지지말고 줄어들지말고 기본*/
-        flex-shrink: 0; /*절대줄어들지않음*/
-        cursor: pointer;
-    }
-
-    .information4_section .slide_container > li:not(:last-child) {
-        margin-right: 16px; /*마지막빼고 오른쪽 여백*/
-    }
-
-    .information4_section .slide_container > li > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-    /**************************************/
-    footer {
-        background: black;
-        color: white;
-    }
-
-    footer .footer_container {
-        display: flex;
-        position: relative;
-    }
-
-    footer .site_nav {
-        display: flex;
-        margin: 56px 48px;
-    }
-
-    footer .site_nav > div {
-        width: 220px;
-    }
-
-    footer .site_nav h4 {
-        margin-bottom: 12px;
-        font-size: 14px;
-    }
-
-    footer .site_nav ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .site_nav li {
-        margin-bottom: 4px;
-        font-size: 12px;
-    }
-
-    footer .site_nav li a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    footer .site_nav li a:hover {
-        border-bottom: 1px solid white;
-    }
-
-    footer .sns_nav ul {
-        display: flex;
-        position: absolute;
-        right: 32px;
-        top: 56px;
-    }
-
-    footer .sns_nav a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-        width: 16px;
-        height: 16px;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    footer .sns_nav a:hover {
-        transform: scale(1.2);
-    }
-
-    .info_nav {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 56px;
-    }
-
-    .info_nav .policy ul li {
-        display: inline-flex;
-        margin-left: 48px;
-    }
-
-    .info_nav .policy ul a {
-        text-decoration: none;
-        color: inherit;
-        font-size: 12px;
-    }
-
-    footer .me_information {
-        text-align: right;
-        position: absolute;
-        right: 48px;
-        font-size: 12px;
-    }
-
-    footer hr {
-        margin: 24px 0;
-        border: none; /* 기본 테두리 제거 */
-        height: 0.5px; /* 두께 */
-        background-color: white; /*선이아니라 블록이라서 백그라운드컬러*/
-    }
-
-    footer .corporate_container {
-        position: relative;
-        display: flex;
-    }
-
-    footer .corp_information {
-        font-size: 12px;
-        margin-left: 48px;
-        margin-bottom: 56px;
-    }
-
-    .site_information {
-        text-align: right;
-        position: absolute;
-        right: 48px;
-        font-size: 12px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* ===================================
-   Tablet 768PX
-=================================== */
-@media screen and (max-width:768px){
-    :root{
-        --main-x-padding: 32px;
-        --main-y-padding: 24px;
-    }
-    header > .home_btn > img{
-        width:20px;
-        height:20px;
-    }
-    header > .main_menu > li{
-        flex-shrink:0;
         display: none;
     }
 
-    header nav ul li .location_btn{
-        display:none;
+    .information4_section .slide_container > li {
+        flex: 0 0 480px;
+        flex-shrink: 0;
+        cursor: pointer;
     }
-    header nav ul li .menu_btn{
+
+    .information4_section .slide_container > li:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    .information4_section .slide_container > li > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         display: block;
-    }
-.hero_section .carousel_container .button_container{
-    position:absolute;
-    bottom:50px;
-    right:24px;
-}
-
-.hero_section .carousel_container .carousel .slide .hero_text{
-    position: absolute;
-    bottom: 50px;
-    left: 24px;
-}
-.hero_section .carousel_container .carousel .slide .hero_text h2{
-    font-size: 36px;
-}
-.hero_section .carousel_container .carousel .slide .hero_text p{
-    font-size: 16px;
-}
-/**************************************************/
-
-h2{
-    font-size: 48px;
-    font-weight: bold;
-}
-.trending_section .list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.trending_section > div .list > li > button{
-    font-size: 16px;
-}
-.trending_section .button_container{
-    display: none;
-}
-.trending_section .product_list{
-    width: 100vw;
-}
-.trending_section .product_list ul{
-    display: flex;
-    flex-wrap: nowrap;     /*한줄에만배치되도록*/
-    overflow-x: auto;     /*위에내용이 넘치니까 스크롤을 자동생성*/
-    scrollbar-width: none; /* Firefox 스크롤바없애기*/
-}
-.container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
-}
-
-.trending_section .product_list ul > li{
-    flex: 0 0 260px;  /*250크기 고정카드*/
-}
-.trending_section .product_list ul{
-    width: 100%;
-    height: 100%;
-    margin-left: calc(var(--main-y-padding) * -1);
-}
-.trending_section .product_list ul li:first-child{
-    margin-left: 24px;
-}
-
-.trending_section .product_list .image_container {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-.product_list .list_info{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 12px;
-}
-
-.product_list .list_info > span > p{
-    font-size: 10px;
-    color: gray;
-}
-
-.product_list span b{
-    font-size: 16px;
-    display: block;
-    color: var(--color-primary);
-}
-/*******************************************/
-.edit_section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    position: relative;
-    background: black;
-    padding: var(--main-x-padding) var(--main-y-padding);
-}
-.edit_section .image_container{
-    grid-column: 1 / 2;    /*1번 세로선에서 시작 2번세로까지사용*/
-    grid-row: 1 / 2;        /*1번 가로선에서 시작 2번가로까지사용*/
-    width: 100%;
-}
-.image_container .main{
-    padding: 0px;
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.edit_section .image_container .main{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-.edit_section .image_container .sub{
-    width: 200px;
-    height: 200px;
-    top: 150px;
-    right: -150px;
-}
-.edit_section .label_container > h2 {
-    font-size: 100px;
-    font-weight: normal;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 20px;
-}
-.edit_section .label_container{
-    display: contents;  /*요소는사라지고 자식요소만 그대로 레이아웃에 참여*/
-    margin-left: 24px;
-}
-.edit_section .label_container > div{
-    grid-column: 1 / 3;  /*1번 세로선에서 시작 2번세로까지사용*/
-    grid-row: 2 / 3;
-    margin-top: 24px;
-    margin-left: 0;   /*여백제거*/
-    margin-right: 0; /*여백제거*/
-    justify-self: start;  /*그리드안에서 자기자신의 가로 왼쪽정렬*/
-    /*justify-self: stretch;  !*그리드는 이걸로 보통 꽉채움*!*/
-}
-.edit_section .label_container > div a {
-    font-size: 24px;
-}
-.information1_section > h3 {
-    font-size: 40px;
-    margin-top: 80px;
-    margin-bottom: 40px;
-}
-    .information1_section > div{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 800px;
-        gap: 16px;
+        user-select: none;
+        -webkit-user-drag: none;
     }
 
 
+    /**************************************/
+    footer {
+        background: black;
+        color: white;
+    }
 
+    footer .footer_container {
+        display: flex;
+        position: relative;
+    }
+
+    footer .site_nav {
+        display: flex;
+        margin: 56px 48px;
+    }
+
+    footer .site_nav > div {
+        width: 220px;
+    }
+
+    footer .site_nav h4 {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    footer .site_nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .site_nav li {
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+
+    footer .site_nav li a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    footer .site_nav li a:hover {
+        border-bottom: 1px solid white;
+    }
+
+    footer .sns_nav ul {
+        display: flex;
+        position: absolute;
+        right: 32px;
+        top: 56px;
+    }
+
+    footer .sns_nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        width: 16px;
+        height: 16px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    footer .sns_nav a:hover {
+        transform: scale(1.2);
+    }
+
+    .info_nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+
+    .info_nav .policy ul li {
+        display: inline-flex;
+        margin-left: 48px;
+    }
+
+    .info_nav .policy ul a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 12px;
+    }
+
+    footer .me_information {
+        text-align: right;
+        position: absolute;
+        right: 48px;
+        font-size: 12px;
+    }
+
+    footer hr {
+        margin: 24px 0;
+        border: none; /* 기본 테두리 제거 */
+        height: 0.5px; /* 두께 */
+        background-color: white; /*선이아니라 블록이라서 백그라운드컬러*/
+    }
+
+    footer .corporate_container {
+        position: relative;
+        display: flex;
+    }
+
+    footer .corp_information {
+        font-size: 12px;
+        margin-left: 48px;
+        margin-bottom: 56px;
+    }
+
+    .site_information {
+        text-align: right;
+        position: absolute;
+        right: 48px;
+        font-size: 12px;
+    }
 }
+    /**********************************************/
+
+    /* ===================================
+       RESPONSIVE COMMON
+    =================================== */
+    img,
+    video {
+        max-width: 100%;
+    }
+
+    body {
+        min-width: 320px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .trending_section,
+    .information4_section {
+        overflow: hidden;
+    }
+
+
+    /* ===================================
+       PC / SMALL DESKTOP 1024PX
+    =================================== */
+    @media screen and (max-width: 1024px) {
+        :root {
+            --main-x-padding: 28px;
+            --main-y-padding: 48px;
+        }
+
+        header {
+            padding: 8px 28px;
+        }
+
+        header > .home_btn > img {
+            width: 44px;
+            height: 44px;
+        }
+
+        header > .main_menu > li > a {
+            font-size: 15px;
+        }
+
+        nav > ul > li {
+            margin: 0 8px;
+        }
+
+        nav > ul > li > a {
+            font-size: 18px;
+        }
+
+        .carousel_container,
+        main > .hero_section {
+            height: 90vh;
+        }
+        main > .hero_section .carousel_container .button_container {
+            margin-bottom: 32px;
+        }
+        main > .hero_section .slide .hero_text{
+            margin-bottom: 32px;
+        }
+        main > .hero_section .slide .hero_text h2 {
+            font-size: 48px;
+        }
+
+        main > .hero_section .slide .hero_text p {
+            font-size: 20px;
+        }
+
+        .carousel_container .button_container {
+            right: 48px;
+            bottom: 64px;
+        }
+
+        h2,
+        .information4_section h2 {
+            font-size: 52px;
+        }
+
+        .trending_section {
+            padding: 48px 28px;
+        }
+
+        .trending_section > div {
+            gap: 24px;
+            margin-right: 0;
+        }
+
+        .trending_section > div .list {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+
+        .trending_section > div .list > li > button {
+            font-size: 20px;
+        }
+
+        .trending_section .product_list {
+            overflow: hidden;
+        }
+
+        .trending_section .product_list ul {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 16px;
+            padding-right: 28px;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+        }
+
+        .trending_section .product_list ul::-webkit-scrollbar {
+            display: none;
+        }
+
+        .trending_section .product_list ul > li {
+            flex: 0 0 280px;
+            scroll-snap-align: start;
+        }
+
+        .product_list .list_info {
+            font-size: 14px;
+        }
+
+        .product_list span b {
+            font-size: 17px;
+        }
+
+        .edit_section {
+            min-height: 780px;
+            padding-top: 32px;
+        }
+
+        .image_container .main {
+            max-width: 560px;
+            height: 760px;
+        }
+
+        .image_container .sub {
+            width: 300px;
+            height: 300px;
+            top: 260px;
+            right: -40px;
+            object-fit: cover;
+        }
+
+        .edit_section .label_container > h2 {
+            font-size: 88px;
+        }
+
+        .edit_section .label_container > div {
+            margin-left: 56px;
+            margin-right: 40px;
+        }
+
+        .edit_section .label_container > div > a {
+            font-size: 36px;
+        }
+
+        .information1_section > h3 {
+            font-size: 52px;
+            margin-left: 28px;
+        }
+
+        .information1_section > div {
+            grid-template-rows: 620px;
+        }
+
+        .information1_section .information > h4 {
+            font-size: 34px;
+        }
+
+        .information1_section .information > p {
+            font-size: 16px;
+        }
+
+        .information2_section {
+            height: 420px;
+        }
+
+        .information2_section .info2_container > p {
+            font-size: 26px;
+        }
+
+        .information3_section > p {
+            font-size: 22px;
+            padding: 0 28px;
+        }
+
+        .information4_section {
+            padding: 48px 28px;
+        }
+        .information4_section > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .information4_section > div h2{
+            margin : 0;
+        }
+        .information4_section .slide_container > li {
+            flex-basis: 380px;
+        }
+
+        footer .site_nav {
+            margin: 48px 32px;
+            gap: 16px;
+        }
+
+        footer .site_nav > div {
+            width: 180px;
+        }
+
+        footer .sns_nav ul {
+            right: 32px;
+        }
+
+        .info_nav .policy ul li {
+            margin-left: 32px;
+        }
+
+        footer .me_information,
+        .site_information {
+            right: 32px;
+        }
+
+        footer .corp_information {
+            margin-left: 32px;
+        }
+    }
+
+
+    /* ===================================
+       TABLET 768PX
+    =================================== */
+    @media screen and (max-width: 768px) {
+        :root {
+            --main-x-padding: 24px;
+            --main-y-padding: 40px;
+        }
+
+        .coupon_info_container {
+            height: 30px;
+            padding: 0 40px;
+        }
+
+        .coupon_info_container > a {
+            font-size: 11px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        header {
+            top: 30px;
+            padding: 12px 24px;
+        }
+
+        header > a {
+            flex: 0 0 auto;
+        }
+
+        header > .home_btn > img {
+            width: 34px;
+            height: 34px;
+        }
+
+        header > .main_menu {
+            display: none;
+        }
+
+        header > nav {
+            flex: 1;
+        }
+
+        nav > ul > li {
+            margin: 0 8px;
+        }
+
+        nav > ul > li > a {
+            font-size: 20px;
+        }
+
+        header nav ul li .location_btn {
+            display: none;
+        }
+
+        header nav ul li .menu_btn {
+            display: block;
+        }
+
+        .carousel_container,
+        main > .hero_section {
+            height: 82vh;
+            min-height: 560px;
+        }
+
+        .hero_section .carousel_container .button_container {
+            right: 24px;
+            bottom: 48px;
+        }
+
+        .carousel_container .button_container > button {
+            width: 56px;
+            height: 36px;
+            font-size: 16px;
+        }
+
+        .hero_section .carousel_container .carousel .slide .hero_text {
+            left: 24px;
+            bottom: 48px;
+            max-width: calc(100% - 160px);
+        }
+
+        main > .hero_section .slide .hero_text h2 {
+            font-size: 38px;
+            line-height: 1.15;
+        }
+
+        main > .hero_section .slide .hero_text p {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .information4_section h2 {
+            font-size: 42px;
+            line-height: 1.1;
+        }
+
+        .trending_section {
+            padding: 44px 24px;
+        }
+
+        .trending_section > div {
+            display: block;
+            margin: 20px 0;
+        }
+
+        .trending_section > div .list {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 18px;
+            padding-bottom: 8px;
+            scrollbar-width: none;
+        }
+
+        .trending_section > div .list::-webkit-scrollbar {
+            display: none;
+        }
+
+        .trending_section > div .list > li {
+            flex-shrink: 0;
+        }
+
+        .trending_section > div .list > li > button {
+            font-size: 18px;
+            white-space: nowrap;
+        }
+
+        .trending_section > div .button_container {
+            display: none;
+        }
+
+        .trending_section .product_list {
+            width: calc(100vw - 24px);
+            margin-left: 0;
+        }
+
+        .trending_section .product_list ul {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 16px;
+            padding-right: 24px;
+            scrollbar-width: none;
+        }
+
+        .trending_section .product_list ul::-webkit-scrollbar {
+            display: none;
+        }
+
+        .trending_section .product_list ul > li {
+            flex: 0 0 260px;
+        }
+
+        .trending_section .product_list .image_container {
+            width: 100%;
+            aspect-ratio: 1 / 1.25;
+        }
+
+        .product_list .list_info {
+            font-size: 13px;
+        }
+
+        .product_list span b {
+            font-size: 16px;
+        }
+
+        .edit_section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+            min-height: auto;
+            padding: 40px 24px;
+            overflow: hidden;
+        }
+
+        .edit_section .image_container {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 100%;
+        }
+
+        .image_container .main {
+            width: 100%;
+            max-width: none;
+            height: auto;
+            padding: 0;
+            object-fit: cover;
+        }
+
+        .image_container .sub {
+            width: 190px;
+            height: 190px;
+            top: 42%;
+            right: -130px;
+            object-fit: cover;
+        }
+
+        .edit_section .label_container {
+            display: contents;
+        }
+
+        .edit_section .label_container > h2 {
+            font-size: 64px;
+            top: 32px;
+            right: 24px;
+            line-height: 1;
+        }
+
+        .edit_section .label_container > div {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            margin: 32px 0 0 0;
+        }
+
+        .edit_section .label_container > div > a {
+            font-size: 28px;
+            line-height: 1.45;
+        }
+
+        .information1_section {
+            margin: 56px auto;
+        }
+
+        .information1_section > h3 {
+            font-size: 40px;
+            margin: 0 24px 28px;
+            line-height: 1.15;
+        }
+
+        .information1_section > div {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 520px;
+            gap: 8px;
+        }
+
+        .information1_section .information {
+            padding: 18px;
+        }
+
+        .information1_section .information > h4 {
+            font-size: 28px;
+        }
+
+        .information1_section .information > p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .information1_section button {
+            right: 18px;
+            bottom: 18px;
+        }
+
+        .information2_section {
+            height: auto;
+            min-height: 360px;
+        }
+
+        .information2_section .info2_container {
+            flex: 1.2;
+        }
+
+        .information2_section .info2_container2 {
+            flex: 1;
+        }
+
+        .information2_section .info2_container > p {
+            font-size: 22px;
+            line-height: 1.5;
+            left: 24px;
+            right: 24px;
+        }
+
+        .information2_section .info2_container > img {
+            margin-left: 24px;
+            margin-top: 24px;
+        }
+
+        .information2_section .info2_container .arrow_button {
+            left: 24px;
+        }
+
+        .information3_section > p {
+            margin: 72px 0;
+            padding: 0 24px;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        main .image_section1 {
+            gap: 6px;
+        }
+
+        .information4_section {
+            padding: 44px 24px;
+            margin: 56px 0;
+        }
+
+        .information4_section > div {
+            margin-bottom: 28px;
+        }
+
+        .information4_section > div > button {
+            width: 120px;
+            font-size: 14px;
+        }
+
+        .information4_section .slide_container > li {
+            flex-basis: 300px;
+        }
+
+        footer .footer_container {
+            display: block;
+            padding: 40px 24px 24px;
+        }
+
+        footer .site_nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 0;
+        }
+
+        footer .site_nav > div {
+            width: auto;
+        }
+
+        footer .sns_nav ul {
+            position: static;
+            display: flex;
+            justify-content: flex-start;
+            gap: 24px;
+            margin-top: 36px;
+        }
+
+        .info_nav {
+            display: block;
+            margin-bottom: 32px;
+            padding: 0 24px;
+        }
+
+        .info_nav .policy ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+        }
+
+        .info_nav .policy ul li {
+            margin-left: 0;
+        }
+
+        footer .me_information {
+            position: static;
+            margin-top: 28px;
+            text-align: left;
+            line-height: 1.7;
+        }
+
+        footer .corporate_container {
+            display: block;
+            padding: 0 24px 40px;
+        }
+
+        footer .corp_information {
+            margin-left: 0;
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .site_information {
+            position: static;
+            text-align: left;
+            line-height: 1.7;
+        }
+    }
+
+
+    /* ===================================
+       MOBILE 480PX
+    =================================== */
+    @media screen and (max-width: 480px) {
+        :root {
+            --main-x-padding: 16px;
+            --main-y-padding: 32px;
+        }
+
+        .coupon_info_container {
+            height: 30px;
+            padding: 0 36px 0 12px;
+        }
+
+        .coupon_info_container > a {
+            font-size: 10px;
+        }
+
+        .coupon_info_container > button {
+            right: 12px;
+        }
+
+        header {
+            padding: 10px 16px;
+        }
+
+        header > .home_btn > img {
+            width: 30px;
+            height: 30px;
+        }
+
+        nav > ul > li {
+            margin: 0 6px;
+        }
+
+        nav > ul > li > a {
+            font-size: 18px;
+        }
+
+        header nav ul li .location_btn {
+            display: none;
+        }
+
+        .carousel_container,
+        main > .hero_section {
+            height: 76vh;
+            min-height: 520px;
+        }
+
+        .hero_section .carousel_container .carousel .slide .hero_text {
+            left: 16px;
+            right: 16px;
+            bottom: 92px;
+            max-width: none;
+        }
+
+        main > .hero_section .slide .hero_text h2 {
+            font-size: 30px;
+        }
+
+        main > .hero_section .slide .hero_text p {
+            font-size: 14px;
+        }
+
+        .hero_section .carousel_container .button_container {
+            left: 16px;
+            right: auto;
+            bottom: 36px;
+        }
+
+        .carousel_container .button_container > button {
+            width: 52px;
+            height: 34px;
+            font-size: 14px;
+        }
+
+        .information4_section h2 {
+            font-size: 34px;
+        }
+
+        .trending_section {
+            padding: 36px 16px;
+        }
+
+        .trending_section > div .list {
+            gap: 14px;
+        }
+
+        .trending_section > div .list > li > button {
+            font-size: 15px;
+        }
+
+        .trending_section .product_list {
+            width: calc(100vw - 16px);
+        }
+
+        .trending_section .product_list ul {
+            gap: 12px;
+            padding-right: 16px;
+        }
+
+        .trending_section .product_list ul > li {
+            flex: 0 0 220px;
+        }
+
+        .product_list .list_info {
+            font-size: 12px;
+        }
+
+        .product_list .list_info strong {
+            display: block;
+            line-height: 1.35;
+        }
+
+        .product_list span b {
+            font-size: 15px;
+        }
+
+        .edit_section {
+            display: block;
+            padding: 36px 16px;
+        }
+
+        .edit_section .image_container {
+            width: 72%;
+        }
+
+        .image_container .main {
+            width: 100%;
+            height: auto;
+        }
+
+        .image_container .sub {
+            width: 150px;
+            height: 150px;
+            top: 42%;
+            right: -112px;
+        }
+
+        .edit_section .label_container {
+            display: block;
+        }
+
+        .edit_section .label_container > h2 {
+            position: static;
+            margin-top: 32px;
+            margin-right: 0;
+            font-size: 50px;
+            line-height: 1;
+        }
+
+        .edit_section .label_container > div {
+            margin: 24px 0 0 0;
+        }
+
+        .edit_section .label_container > div > a {
+            font-size: 22px;
+            line-height: 1.55;
+        }
+
+        .information1_section {
+            margin: 48px 0;
+        }
+
+        .information1_section > h3 {
+            font-size: 32px;
+            margin: 0 16px 24px;
+        }
+
+        .information1_section > div {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 420px 420px;
+            gap: 8px;
+        }
+
+        .information1_section .information > h4 {
+            font-size: 26px;
+        }
+
+        .information1_section .information > p {
+            font-size: 14px;
+        }
+
+        .information2_section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .information2_section .info2_container {
+            min-height: 320px;
+            flex: none;
+        }
+
+        .information2_section .info2_container2 {
+            height: 320px;
+            flex: none;
+        }
+
+        .information2_section .info2_container > img {
+            width: 42px;
+            height: 42px;
+            margin-left: 16px;
+            margin-top: 20px;
+        }
+
+        .information2_section .info2_container > p {
+            position: static;
+            transform: none;
+            padding: 72px 16px 80px;
+            font-size: 20px;
+            line-height: 1.55;
+        }
+
+        .information2_section .info2_container .arrow_button {
+            left: 16px;
+            bottom: 20px;
+        }
+
+        .information3_section > p {
+            margin: 56px 0;
+            padding: 0 16px;
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        main .image_section1 {
+            display: block;
+        }
+
+        main .image_section1 > div + div {
+            margin-top: 8px;
+        }
+
+        .information4_section {
+            padding: 36px 16px;
+            margin: 48px 0;
+        }
+
+        .information4_section > div {
+            align-items: flex-end;
+            margin-bottom: 24px;
+        }
+
+        .information4_section > div > button {
+            width: auto;
+            min-width: 96px;
+            height: 36px;
+            padding: 4px 16px;
+            font-size: 13px;
+        }
+
+        .information4_section .slide_container > li {
+            flex-basis: 240px;
+        }
+
+        footer .footer_container {
+            padding: 36px 16px 24px;
+        }
+
+        footer .site_nav {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        footer .site_nav h4 {
+            font-size: 15px;
+        }
+
+        footer .site_nav li {
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+
+        footer .sns_nav ul {
+            gap: 22px;
+            margin-top: 32px;
+        }
+
+        .info_nav {
+            padding: 0 16px;
+        }
+
+        .info_nav .policy ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        footer .me_information {
+            font-size: 11px;
+        }
+
+        footer .corporate_container {
+            padding: 0 16px 36px;
+        }
+
+        footer .corp_information,
+        .site_information {
+            font-size: 11px;
+        }
+    }
+
+
+
+    /* ===================================
+       POPUP RESPONSIVE
+    =================================== */
+    @media screen and (max-width: 1024px) {
+        .popup {
+            width: calc(100vw - 64px);
+            height: min(760px, calc(100vh - 80px));
+        }
+
+        .product_top img {
+            width: 88px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .popup_overlay {
+            align-items: flex-end;
+        }
+
+        .popup {
+            width: 100%;
+            height: calc(100vh - 40px);
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .popup_left,
+        .popup_right {
+            flex: none;
+        }
+
+        .popup_left {
+            height: 42vh;
+        }
+
+        .popup_left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .popup_right {
+            min-height: 58vh;
+            padding: 20px 20px 120px;
+        }
+
+        .popup_close_top {
+            top: 16px;
+            right: 16px;
+        }
+
+        .total {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background: white;
+            padding: 16px 20px 20px;
+            z-index: 20;
+            box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .popup {
+            height: 100vh;
+        }
+
+        .popup_left {
+            height: 36vh;
+        }
+
+        .popup_right {
+            padding: 16px 16px 120px;
+        }
+
+        .popup_right .check {
+            padding: 18px 0;
+        }
+
+        .product_top {
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .product_top img {
+            width: 76px;
+        }
+
+        .product_top .info b,
+        .product_top .info span,
+        .product_top .info strong {
+            font-size: 12px;
+            line-height: 1.45;
+        }
+
+        .accordion {
+            margin-top: 16px;
+        }
+
+        .size_box {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 6px;
+        }
+
+        .size_box button {
+            padding: 7px;
+            font-size: 12px;
+        }
+
+        .cart_btn {
+            height: 48px;
+        }
+    }
 
 
-
-
-
-
-
-/**********************************************/
-/* ===================================
-   MOBILE 480PX
-=================================== */
-/*@media screen and (max-width:480px){*/
-
-/*    *{*/
-/*        box-sizing:border-box;*/
-/*    }*/
-
-/*    body{*/
-/*        overflow-x:hidden;*/
-/*    }*/
-
-/*    :root{*/
-/*        --main-x-padding:16px;*/
-/*        --main-y-padding:24px;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       HEADER*/
-/*    ====================== *!*/
-/*    header{*/
-/*        top:30px;*/
-/*        padding:12px 16px;*/
-/*        flex-wrap:wrap;*/
-/*        background:rgba(0,0,0,0.4);*/
-/*        backdrop-filter:blur(8px);*/
-/*    }*/
-
-/*    header > .home_btn > img{*/
-/*        width:30px;*/
-/*        height:30px;*/
-/*    }*/
-
-/*    header > .main_menu{*/
-/*        width:100%;*/
-/*        order:3;*/
-/*        overflow-x:auto;*/
-/*        justify-content:flex-start;*/
-/*        margin-top:12px;*/
-/*        gap:20px;*/
-/*        display: none;*/
-/*    }*/
-
-/*    header > .main_menu > li{*/
-/*        flex-shrink:0;*/
-/*    }*/
-
-/*    header nav ul li .location_btn{*/
-/*        display:none;*/
-/*    }*/
-/*    header nav ul li .menu_btn{*/
-/*        display: block;*/
-/*    }*/
-/*    header nav ul{*/
-/*        gap:14px;*/
-/*    }*/
-
-/*    nav > ul > li{*/
-/*        margin:0;*/
-/*    }*/
-
-/*    nav > ul > li > a{*/
-/*        font-size:24px;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       HERO*/
-/*    ====================== *!*/
-/*    !* HERO *!*/
-/*    .hero_section{*/
-/*        width: 100%;*/
-/*        height:auto;*/
-/*        aspect-ratio: 16 / 9;*/
-/*        position:relative;*/
-/*        object-fit: cover;*/
-/*    }*/
-
-/*    !* carousel *!*/
-/*    .carousel_container{*/
-/*        display:flex;*/
-/*        width:100%;*/
-/*        height:100%;*/
-/*        position:relative;*/
-/*    }*/
-
-/*    .carousel{*/
-/*        width:100%;*/
-/*        height:100%;*/
-
-/*        display:flex;*/
-
-/*        margin:0;*/
-/*        padding:0;*/
-
-/*        list-style:none;*/
-/*    }*/
-
-/*    !* slide *!*/
-/*    .hero_section .carousel_container .carousel .slide{*/
-/*        position:relative;*/
-/*        min-width:100%;*/
-/*        height:100%;*/
-/*        overflow:hidden;*/
-/*    }*/
-
-/*    !* video *!*/
-/*    .slide video{*/
-/*        position:absolute;*/
-/*        inset:0;*/
-/*        width:100%;*/
-/*        height: 100%;*/
-/*        object-fit:cover;*/
-/*        z-index:1;*/
-/*    }*/
-
-
-/*    !* text *!*/
-/*    .hero_section .carousel .slide .hero_text{*/
-/*        position:absolute;*/
-/*        left:20px;*/
-/*        bottom:100px;*/
-/*        z-index:3;*/
-/*        color:white;*/
-/*    }*/
-
-/*    !* text size *!*/
-/*    .hero_section .carousel .slide .hero_text h2{*/
-/*        font-size: 24px;*/
-/*        line-height:1.2;*/
-/*    }*/
-
-/*    .hero_section .carousel .slide .hero_text p{*/
-/*        margin-top:8px;*/
-/*        font-size:14px;*/
-/*    }*/
-/*    !*.button_container{*!*/
-/*    !*    display:none;*!*/
-/*    !*}*!*/
-
-/*    !* ======================*/
-/*       COMMON*/
-/*    ====================== *!*/
-/*    h2{*/
-/*        font-size:36px;*/
-/*        line-height:1.2;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       TRENDING*/
-/*    ====================== *!*/
-/*    .trending_section{*/
-/*        padding:40px 16px;*/
-/*    }*/
-
-/*    .trending_section > div{*/
-/*        flex-direction:column;*/
-/*        margin:20px 0;*/
-/*    }*/
-
-/*    .trending_section > div .list{*/
-/*        overflow-x:auto;*/
-/*        white-space:nowrap;*/
-/*        gap:14px;*/
-/*        padding-bottom:6px;*/
-/*    }*/
-
-/*    .trending_section > div .list::-webkit-scrollbar{*/
-/*        display:none;*/
-/*    }*/
-
-/*    .trending_section > div .list > li{*/
-/*        flex-shrink:0;*/
-/*    }*/
-
-/*    .trending_section > div .list > li > button{*/
-/*        font-size:15px;*/
-/*    }*/
-
-/*    .trending_section .product_list ul{*/
-/*        grid-template-columns:1fr 1fr;*/
-/*        gap:14px;*/
-/*    }*/
-
-/*    .trending_section .product_list li{*/
-/*        border-radius:14px;*/
-/*        overflow:hidden;*/
-/*        background:white;*/
-/*    }*/
-
-/*    .trending_section .image_container{*/
-/*        aspect-ratio:1/1.2;*/
-/*    }*/
-
-/*    .product_list .list_info{*/
-/*        padding:10px;*/
-/*        gap:6px;*/
-/*    }*/
-
-/*    .product_list .list_info strong{*/
-/*        font-size:14px;*/
-/*        line-height:1.4;*/
-/*    }*/
-
-/*    .product_list span b{*/
-/*        font-size:16px;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       EDIT SECTION*/
-/*    ====================== *!*/
-/*    .edit_section{*/
-/*        flex-direction:column;*/
-/*        padding:40px 0;*/
-/*    }*/
-
-/*    .edit_section .image_container{*/
-/*        width:100%;*/
-/*    }*/
-
-/*    .image_container .main{*/
-/*        width:100%;*/
-/*        height:auto;*/
-/*        padding:0;*/
-/*    }*/
-
-/*    .image_container .sub{*/
-/*        width:160px;*/
-/*        height:160px;*/
-/*        right:10px;*/
-/*        bottom:-30px;*/
-/*        top:auto;*/
-/*    }*/
-
-/*    .edit_section .label_container{*/
-/*        width:100%;*/
-/*        padding:60px 20px 0;*/
-/*        align-items:flex-start;*/
-/*    }*/
-
-/*    .edit_section .label_container > h2{*/
-/*        position:static;*/
-/*        font-size:56px;*/
-/*        margin-bottom:24px;*/
-/*    }*/
-
-/*    .edit_section .label_container > div{*/
-/*        margin:0;*/
-/*    }*/
-
-/*    .edit_section .label_container > div > a{*/
-/*        font-size:24px;*/
-/*        line-height:1.8;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       INFORMATION 1*/
-/*    ====================== *!*/
-/*    .information1_section{*/
-/*        width:100%;*/
-/*        padding:0 16px;*/
-/*        margin:60px 0;*/
-/*    }*/
-
-/*    .information1_section > h3{*/
-/*        font-size:34px;*/
-/*        margin-bottom:24px;*/
-/*    }*/
-
-/*    .information1_section > div{*/
-/*        grid-template-columns:1fr;*/
-/*        grid-template-rows:350px 350px;*/
-/*    }*/
-
-/*    .information1_section .information > h4{*/
-/*        font-size:28px;*/
-/*    }*/
-
-/*    .information1_section .information > p{*/
-/*        font-size:14px;*/
-/*        line-height:1.6;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       INFORMATION 2*/
-/*    ====================== *!*/
-/*    .information2_section{*/
-/*        width:100%;*/
-/*        height:auto;*/
-/*        flex-direction:column;*/
-/*    }*/
-
-/*    .information2_section .info2_container{*/
-/*        padding:24px;*/
-/*        min-height:300px;*/
-/*    }*/
-
-/*    .information2_section .info2_container > p{*/
-/*        position:static;*/
-/*        transform:none;*/
-/*        margin-top:40px;*/
-/*        font-size:22px;*/
-/*        line-height:1.6;*/
-/*    }*/
-
-/*    .information2_section .info2_container .arrow_button{*/
-/*        left:24px;*/
-/*        bottom:24px;*/
-/*    }*/
-
-/*    .information2_section .info2_container2{*/
-/*        height:280px;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       INFORMATION 3*/
-/*    ====================== *!*/
-/*    .information3_section > p{*/
-/*        padding:0 20px;*/
-/*        font-size:18px;*/
-/*        line-height:1.8;*/
-/*        margin:60px 0;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       IMAGE SECTION*/
-/*    ====================== *!*/
-/*    main .image_section1{*/
-/*        flex-direction:column;*/
-/*        gap:0;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       SHOP LOOK*/
-/*    ====================== *!*/
-/*    .information4_section{*/
-/*        padding:40px 16px;*/
-/*        margin:0;*/
-/*    }*/
-
-/*    .information4_section > div:first-child{*/
-/*        margin-bottom:24px;*/
-/*    }*/
-
-/*    .information4_section h2{*/
-/*        font-size:34px;*/
-/*    }*/
-
-/*    .information4_section .slide_container > li{*/
-/*        flex:0 0 240px;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       FOOTER*/
-/*    ====================== *!*/
-/*    footer .footer_container{*/
-/*        flex-direction:column;*/
-/*    }*/
-
-/*    footer .site_nav{*/
-/*        flex-direction:column;*/
-/*        gap:32px;*/
-/*        margin:40px 20px;*/
-/*    }*/
-
-/*    footer .sns_nav ul{*/
-/*        position:static;*/
-/*        justify-content:flex-start;*/
-/*        margin-left:20px;*/
-/*        margin-bottom:40px;*/
-/*        gap:24px;*/
-/*    }*/
-
-/*    .info_nav{*/
-/*        flex-direction:column;*/
-/*        align-items:flex-start;*/
-/*        padding:0 20px;*/
-/*        gap:24px;*/
-/*    }*/
-
-/*    .info_nav .policy ul li{*/
-/*        margin-left:0;*/
-/*        margin-right:16px;*/
-/*    }*/
-
-/*    footer .me_information{*/
-/*        position:static;*/
-/*        text-align:left;*/
-/*    }*/
-
-/*    footer .corporate_container{*/
-/*        flex-direction:column;*/
-/*        padding:0 20px 40px;*/
-/*    }*/
-
-/*    footer .corp_information{*/
-/*        margin:0 0 20px;*/
-/*        line-height:1.8;*/
-/*    }*/
-
-/*    .site_information{*/
-/*        position:static;*/
-/*        text-align:left;*/
-/*        line-height:1.7;*/
-/*    }*/
-
-/*    !* ======================*/
-/*       POPUP*/
-/*    ====================== *!*/
-/*    .popup{*/
-/*        width:100%;*/
-/*        height:100vh;*/
-/*        border-radius:0;*/
-/*        flex-direction:column;*/
-/*        overflow-y:auto;*/
-/*    }*/
-
-/*    .popup_left{*/
-/*        width:100%;*/
-/*    }*/
-
-/*    .popup_left img{*/
-/*        width:100%;*/
-/*    }*/
-
-/*    .popup_right{*/
-/*        width:100%;*/
-/*        padding:20px;*/
-/*    }*/
-
-/*    .product{*/
-/*        margin-bottom:20px;*/
-/*    }*/
-
-/*    .product_top{*/
-/*        gap:10px;*/
-/*        align-items:flex-start;*/
-/*    }*/
-
-/*    .product_top img{*/
-/*        width:90px;*/
-/*        height:90px;*/
-/*        object-fit:cover;*/
-/*    }*/
-
-/*    .size_box{*/
-/*        grid-template-columns:repeat(3,1fr);*/
-/*        display:grid;*/
-/*        gap:8px;*/
-/*    }*/
-
-/*    .cart_btn{*/
-/*        width:100%;*/
-/*        height:50px;*/
-/*    }*/
-
-/*}*/
 
 
 

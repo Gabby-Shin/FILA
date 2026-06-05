@@ -1,58 +1,137 @@
-// const container = document.querySelector('.slide_container');
-//
-// // 👉 무한 슬라이드 위해 복제
-// container.innerHTML += container.innerHTML;
-//
-// let scrollAmount = 0;
-// let isDown = false;
-// let startX;
-// let scrollLeft;
-//
-// // 👉 자동 슬라이드
-// function autoSlide() {
-//     scrollAmount += 0.5; // 속도 (조절 가능)
-//     container.scrollLeft = scrollAmount;
-//
-//     if (scrollAmount >= container.scrollWidth / 2) {
-//         scrollAmount = 0;
-//     }
-// }
-//
-// let interval = setInterval(autoSlide, 16);
-//
-// // 👉 마우스 올리면 멈춤
-// container.addEventListener('mouseenter', () => {
-//     clearInterval(interval);
-// });
-//
-// container.addEventListener('mouseleave', () => {
-//     interval = setInterval(autoSlide, 16);
-// });
-//
-// // 👉 드래그 시작
-// container.addEventListener('mousedown', (e) => {
-//     isDown = true;
-//     startX = e.pageX - container.offsetLeft;
-//     scrollLeft = container.scrollLeft;
-//     container.style.cursor = 'grabbing';
-// });
-//
-// // 👉 드래그 중
-// container.addEventListener('mousemove', (e) => {
-//     if (!isDown) return;
-//     e.preventDefault();
-//     const x = e.pageX - container.offsetLeft;
-//     const walk = (x - startX) * 2; // 드래그 속도
-//     container.scrollLeft = scrollLeft - walk;
-// });
-//
-// // 👉 드래그 끝
-// container.addEventListener('mouseup', () => {
-//     isDown = false;
-//     container.style.cursor = 'grab';
-// });
-//
-// container.addEventListener('mouseleave', () => {
-//     isDown = false;
-//     container.style.cursor = 'grab';
-// });
+const slideContainer = document.querySelector(".slide_container");
+
+if (slideContainer) {
+    const originalSlideItems = Array.from(slideContainer.children);
+
+    originalSlideItems.forEach((item) => {
+        const cloneItem = item.cloneNode(true);
+        cloneItem.setAttribute("aria-hidden", "true");
+        slideContainer.appendChild(cloneItem);
+    });
+
+    let animationId = null;
+    let isDragging = false;
+    let isHovering = false;
+    let startX = 0;
+    let startScrollLeft = 0;
+    let dragDistance = 0;
+
+    const slideSpeed = 0.8;
+
+    function getHalfScrollWidth() {
+        return slideContainer.scrollWidth / 2;
+    }
+
+    function resetInfiniteScroll() {
+        const halfScrollWidth = getHalfScrollWidth();
+
+        if (slideContainer.scrollLeft >= halfScrollWidth) {
+            slideContainer.scrollLeft -= halfScrollWidth;
+        }
+
+        if (slideContainer.scrollLeft <= 0) {
+            slideContainer.scrollLeft += halfScrollWidth;
+        }
+    }
+
+    function autoSlide() {
+        if (!isHovering && !isDragging) {
+            slideContainer.scrollLeft += slideSpeed;
+            resetInfiniteScroll();
+        }
+
+        animationId = requestAnimationFrame(autoSlide);
+    }
+
+    function startAutoSlide() {
+        if (animationId) {
+            cancelAnimationFrame(animationId);
+        }
+
+        animationId = requestAnimationFrame(autoSlide);
+    }
+
+    function getPageX(event) {
+        if (event.touches && event.touches.length > 0) {
+            return event.touches[0].pageX;
+        }
+
+        return event.pageX;
+    }
+
+    slideContainer.addEventListener("mouseenter", () => {
+        isHovering = true;
+    });
+
+    slideContainer.addEventListener("mouseleave", () => {
+        isHovering = false;
+        isDragging = false;
+        slideContainer.classList.remove("dragging");
+    });
+
+    slideContainer.addEventListener("mousedown", (event) => {
+        isDragging = true;
+        isHovering = true;
+        startX = getPageX(event);
+        startScrollLeft = slideContainer.scrollLeft;
+        dragDistance = 0;
+        slideContainer.classList.add("dragging");
+    });
+
+    slideContainer.addEventListener("mousemove", (event) => {
+        if (!isDragging) {
+            return;
+        }
+
+        event.preventDefault();
+
+        const currentX = getPageX(event);
+        const moveX = currentX - startX;
+
+        dragDistance = Math.abs(moveX);
+        slideContainer.scrollLeft = startScrollLeft - moveX;
+        resetInfiniteScroll();
+    });
+
+    slideContainer.addEventListener("mouseup", () => {
+        isDragging = false;
+        slideContainer.classList.remove("dragging");
+    });
+
+    slideContainer.addEventListener("touchstart", (event) => {
+        isDragging = true;
+        isHovering = true;
+        startX = getPageX(event);
+        startScrollLeft = slideContainer.scrollLeft;
+        dragDistance = 0;
+    });
+
+    slideContainer.addEventListener("touchmove", (event) => {
+        if (!isDragging) {
+            return;
+        }
+
+        const currentX = getPageX(event);
+        const moveX = currentX - startX;
+
+        dragDistance = Math.abs(moveX);
+        slideContainer.scrollLeft = startScrollLeft - moveX;
+        resetInfiniteScroll();
+    });
+
+    slideContainer.addEventListener("touchend", () => {
+        isDragging = false;
+        isHovering = false;
+    });
+
+    slideContainer.addEventListener("click", (event) => {
+        if (dragDistance > 5) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    }, true);
+
+    window.addEventListener("resize", resetInfiniteScroll);
+
+    startAutoSlide();
+}
