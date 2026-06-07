@@ -1,85 +1,155 @@
-.coupon_info_container{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-left: 0;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 30px;
-    background-color: blue;
-    color: white;
-    z-index: 9999;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/******************************************/
-header{
-    margin-top: 48px;
+html,
+body {
+    overflow-x: hidden;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 쿠폰 영역 */
+.coupon_info_container {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.coupon_info_container > a {
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.coupon_info_container > a:hover {
+    border-bottom: 2px solid white;
+}
+
+.coupon_info_container > button {
+    position: absolute;
+    right: 20px;
+    background: unset;
+    border: none;
+    line-height: 30px;
+    color: dimgray;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.coupon_info_container > button:hover {
+    color: white;
+}
+
+/* 헤더 */
+header {
+    position: absolute;
     width: 100%;
     top: 30px;
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 8px 48px;
+    padding: 8px 32px;
+    z-index: 10;
 }
-header > .home_btn > img{
+
+header > a {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+header > .home_btn > img {
     width: 50px;
     height: 50px;
 }
 
-header > .main_menu{
+header > .main_menu {
     display: flex;
+    flex: 1;
+    justify-content: center;
 }
-header > .main_menu > li{
+
+header > .main_menu > li {
     padding: 4px 8px;
     cursor: pointer;
-
-    /* 폰트넣기*/
+    list-style: none;
 }
-header > .main_menu > li > a{
-    text-decoration: none; /*underline 제거*/
+
+header > .main_menu > li > a {
+    text-decoration: none;
     color: black;
     font-size: 16px;
-    font-weight: 500;
-    line-height: var(--font-body-lg-line-height);
-    letter-spacing: var(--font-display-lg-letter-spacing);
+    font-weight: bold;
     padding: 4px 0;
-    &:hover{
-        border-bottom: 2px solid black;
-    }
 }
 
+header > .main_menu > li > a:hover {
+    border-bottom: 2px solid black;
+}
 
-header > nav > ul{
+header > nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header > nav > ul {
     display: flex;
 }
-nav > ul > li{
+
+nav > ul > li {
     margin: 0 12px;
+    list-style: none;
 }
-nav > ul > li  > a{
+
+nav > ul > li > a {
     color: black;
     font-size: 20px;
 }
-/**************************************************/
-.product_list_header{
-    margin-left: 48px;
+
+nav > ul > li > .menu_btn {
+    display: none;
 }
-.product_list_header > span > a{
+
+/* 상품 상단 */
+.product_list_header {
+    margin: 0 48px;
+}
+
+.product_list_header > span > a {
     text-decoration: none;
     color: inherit;
 }
-.breadcrumb{
+
+.breadcrumb {
+    display: block;
     font-size: 14px;
     font-weight: 500;
     color: black;
-    margin-top: 96px;
+    margin-top: 160px;
 }
-.product_list_header > h1{
+
+.product_list_header > h1 {
     font-size: 50px;
     margin: 48px 0;
 }
+
 .filter_container > ul {
     display: flex;
     justify-content: flex-start;
@@ -89,19 +159,23 @@ nav > ul > li  > a{
     margin-bottom: 32px;
     color: grey;
 }
+
 .filter_container > ul > li {
-    &:hover {
-        color: black;
-        cursor: pointer;
-    }
+    list-style: none;
+    cursor: pointer;
 }
 
-.button_container{
+.filter_container > ul > li:hover {
+    color: black;
+}
+
+.button_container {
     display: flex;
     justify-content: flex-start;
     gap: 12px;
 }
-.button_container > .filter_btn{
+
+.button_container > .filter_btn {
     background: black;
     color: white;
     border: 1px solid black;
@@ -109,12 +183,14 @@ nav > ul > li  > a{
     border-radius: 20px;
     cursor: pointer;
     width: 100px;
-    &:hover{
-        background: white;
-        color: black;
-    }
 }
-.button_container > .sort_btn{
+
+.button_container > .filter_btn:hover {
+    background: white;
+    color: black;
+}
+
+.button_container > .sort_btn {
     background: white;
     color: black;
     border: 1px solid black;
@@ -122,84 +198,106 @@ nav > ul > li  > a{
     border-radius: 20px;
     cursor: pointer;
     width: 100px;
-    &:hover{
-        background: black;
-        color: white;
-    }
 }
 
-
-/*****************************************************/
-.product_list{
-    margin-top: 10px;
+.button_container > .sort_btn:hover {
+    background: black;
+    color: white;
 }
+
+/* 상품 리스트 */
+.product_list {
+    margin-top: 96px;
+}
+
 .product_list > ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 60px;
-    justify-items: center;
+    gap: 80px 20px;
+    margin: 0 48px;
 }
-.product_list > ul > li > a > .image_container{
-    margin-top: 96px;
+
+.product_list > ul > li {
+    list-style: none;
+}
+
+.product_list > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.product_list > ul > li > a > .image_container {
     position: relative;
-    width: 400px;
+    width: 100%;
     overflow: hidden;
 }
-.product_list > ul > li > a > img{
-    width: 50px;
-    height: 50px;
+
+.product_list .image_container .image_info {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    overflow: hidden;
+}
+
+.product_list .image_container .main_img,
+.product_list .image_container .hover_img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-.product_list .image_container .main_img{
-    width: 400px;
-    margin: 0;
-    display: block;
-    text-align: left;
+
+.product_list .image_container .main_img {
+    position: relative;
+    z-index: 1;
 }
-.product_list .image_container .hover_img{
+
+.product_list .image_container .hover_img {
     position: absolute;
-    width: 400px;
     top: 0;
     left: 0;
     opacity: 0;
+    z-index: 2;
     transition: opacity 0.3s ease;
-    &
 }
-.image_container:hover .hover_img {
+
+.product_list .image_container:hover .hover_img {
     opacity: 1;
 }
+
+.product_list > ul > li > a > img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 12px;
+    object-fit: cover;
+}
+
 .product_list .popup_container {
     position: absolute;
     left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, 10px);
+    bottom: 16px;
+    transform: translate(-50%, 120%);
     background: black;
     color: white;
     padding: 10px;
     opacity: 0;
     z-index: 10;
-    transition: 0.3s;
+    pointer-events: none;
+    width: calc(100% - 24px);
+    min-height: 140px;
+    transition: transform 0.28s ease, opacity 0.28s ease;
 }
 
-/* hover 시 */
-.image_container:hover .popup_container {
+.product_list .image_container:hover .popup_container {
     opacity: 1;
-    transform: translate(-50%, -10%);
-    width: 500px;
-    height: 150px;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+}
 
-}
-.popup_container > ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.popup_container > span{
+.popup_container > span {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -207,30 +305,44 @@ nav > ul > li  > a{
     padding: 16px 0;
     gap: 16px;
 }
-.product_list a{
-    text-decoration: none;
+
+.popup_container > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
 }
-.product_list .tag{
+
+.popup_container > ul > li {
+    list-style: none;
+}
+
+.product_list .tag {
     color: grey;
-    margin: 2px 0;
+    margin: 8px 0 4px;
     display: block;
     text-align: left;
+    font-size: 13px;
 }
-.product_list .title{
-    font-size: var(--font-body-md-size);
-    color: var(--color-primary);
-    margin: 2px 0;
-    display: block;
-}
-.product_list .price{
-    font-size: var(--font-body-md-size);
-    color: var(--color-primary);
-    display: block;
-}
-/*******************************************/
-/* ... existing code ... */
 
-.pagination{
+.product_list .title {
+    font-size: 16px;
+    color: var(--color-primary);
+    margin: 4px 0;
+    display: block;
+    line-height: 1.4;
+}
+
+.product_list .price {
+    font-size: 16px;
+    color: var(--color-primary);
+    display: block;
+    margin-top: 4px;
+}
+
+/* 페이지네이션 */
+.pagination {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,7 +350,7 @@ nav > ul > li  > a{
     gap: 8px;
 }
 
-.pagination button{
+.pagination button {
     border-radius: 50%;
     border: none;
     font-size: 18px;
@@ -249,70 +361,95 @@ nav > ul > li  > a{
     height: 44px;
 }
 
-/* 선택된 페이지 버튼 */
-.pagination .pagination_btn.active{
+.pagination .pagination_btn.active {
     background: black;
     color: white;
 }
 
-/* 화살표 버튼 */
-.pagination .pagination_arrow{
+.pagination .pagination_arrow {
     background: white;
     color: black;
 }
 
-/* hover 효과 */
-.pagination button:hover{
+.pagination button:hover {
     background: black;
     color: white;
 }
 
-/* ... existing code ... */
-
-
-/**************************************/
-footer{
+/* 푸터 */
+footer {
     background: black;
     color: white;
 }
+
 footer .footer_container {
     display: flex;
     position: relative;
 }
-footer .site_nav{
+
+footer .site_nav {
     display: flex;
     margin: 56px 48px;
 }
-footer .site_nav > div{
+
+footer .site_nav > div {
     width: 220px;
 }
-footer .site_nav h4{
+
+footer .site_nav h4 {
     margin-bottom: 12px;
     font-size: 14px;
 }
-footer .site_nav ul{
+
+footer .footer_accordion_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+}
+
+footer .footer_accordion_icon {
+    display: none;
+}
+
+footer .site_nav ul {
     display: flex;
     flex-direction: column;
 }
-footer .site_nav li{
+
+footer .site_nav li {
     margin-bottom: 4px;
     font-size: 12px;
+    list-style: none;
 }
-footer .site_nav li a{
+
+footer .site_nav li a {
     text-decoration: none;
     color: inherit;
 }
-footer .site_nav li a:hover{
+
+footer .site_nav li a:hover {
     border-bottom: 1px solid white;
 }
 
-footer .sns_nav ul{
+footer .sns_nav ul {
     display: flex;
     position: absolute;
     right: 32px;
     top: 56px;
 }
-footer .sns_nav a{
+
+footer .sns_nav li {
+    list-style: none;
+}
+
+footer .sns_nav a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,58 +457,529 @@ footer .sns_nav a{
     width: 16px;
     height: 16px;
     text-decoration: none;
+    color: white;
     transition: 0.3s;
 }
-footer .sns_nav a:hover{
+
+footer .sns_nav a:hover {
     transform: scale(1.2);
 }
-.info_nav{
+
+.info_nav {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 56px;
 }
-.info_nav .policy ul li{
+
+.info_nav .policy ul li {
     display: inline-flex;
     margin-left: 48px;
+    list-style: none;
 }
-.info_nav .policy ul a{
+
+.info_nav .policy ul a {
     text-decoration: none;
     color: inherit;
     font-size: 12px;
 }
-footer .me_information{
+
+footer .me_information {
     text-align: right;
     position: absolute;
     right: 48px;
     font-size: 12px;
 }
-footer hr{
+
+footer hr {
     margin: 24px 0;
-    border: none;        /* 기본 테두리 제거 */
-    height: 0.5px;         /* 두께 */
-    background-color: white;   /*선이아니라 블록이라서 백그라운드컬러*/
+    border: none;
+    height: 0.5px;
+    background-color: white;
 }
-footer .corporate_container{
+
+footer .corporate_container {
     position: relative;
     display: flex;
 }
-footer .corp_information{
+
+footer .corp_information {
     font-size: 12px;
     margin-left: 48px;
     margin-bottom: 56px;
 }
-.site_information{
+
+.site_information {
     text-align: right;
     position: absolute;
     right: 48px;
     font-size: 10px;
 }
-/* ***************************/
-#checkpoint .card{
-    display: inline-block;
-    width: 200px;
-    margin-right: 20px;
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 8px 28px;
+    }
+
+    header > .home_btn > img {
+        width: 44px;
+        height: 44px;
+    }
+
+    header > .main_menu > li > a {
+        font-size: 15px;
+    }
+
+    nav > ul > li {
+        margin: 0 8px;
+    }
+
+    nav > ul > li > a {
+        font-size: 18px;
+    }
+
+    .product_list_header {
+        margin: 0 28px;
+    }
+
+    .breadcrumb {
+        margin-top: 140px;
+    }
+
+    .product_list_header > h1 {
+        font-size: 46px;
+        margin: 44px 0;
+    }
+
+    .filter_container > ul {
+        flex-wrap: wrap;
+        gap: 14px;
+        font-size: 18px;
+    }
+
+    .product_list {
+        margin-top: 72px;
+    }
+
+    .product_list > ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 72px 16px;
+        margin: 0 28px;
+    }
+
+    .product_list .title,
+    .product_list .price {
+        font-size: 15px;
+    }
+
+    footer .site_nav {
+        margin: 48px 32px;
+        gap: 16px;
+    }
+
+    footer .site_nav > div {
+        width: 180px;
+    }
+
+    footer .sns_nav ul {
+        right: 32px;
+    }
+
+    .info_nav .policy ul li {
+        margin-left: 32px;
+    }
+
+    footer .me_information,
+    .site_information {
+        right: 32px;
+    }
+
+    footer .corp_information {
+        margin-left: 32px;
+    }
 }
 
+/* 768px */
+@media screen and (max-width: 768px) {
+    .coupon_info_container {
+        padding: 0 40px;
+    }
+
+    .coupon_info_container > a {
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    header {
+        top: 30px;
+        padding: 12px 24px;
+    }
+
+    header > a {
+        flex: 0 0 auto;
+    }
+
+    header > .home_btn > img {
+        width: 34px;
+        height: 34px;
+    }
+
+    header > .main_menu {
+        display: none;
+    }
+
+    header > nav {
+        flex: 1;
+    }
+
+    nav > ul > li {
+        margin: 0 8px;
+    }
+
+    nav > ul > li > a {
+        font-size: 20px;
+    }
+
+    header nav ul li .location_btn {
+        display: none;
+    }
+
+    header nav ul li .menu_btn {
+        display: block;
+    }
+
+    .product_list_header {
+        margin: 0 24px;
+    }
+
+    .breadcrumb {
+        margin-top: 128px;
+        font-size: 13px;
+    }
+
+    .product_list_header > h1 {
+        font-size: 40px;
+        margin: 36px 0;
+    }
+
+    .filter_container > ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 18px;
+        padding-bottom: 8px;
+        font-size: 17px;
+        scrollbar-width: none;
+    }
+
+    .filter_container > ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter_container > ul > li {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .product_list {
+        margin-top: 56px;
+    }
+
+    .product_list > ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 56px 14px;
+        margin: 0 24px;
+    }
+
+    .product_list .popup_container {
+        display: none;
+    }
+
+    .product_list > ul > li > a > img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .product_list .tag {
+        font-size: 12px;
+    }
+
+    .product_list .title,
+    .product_list .price {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .pagination {
+        margin: 72px 0;
+    }
+
+    footer .footer_container {
+        display: block;
+        padding: 40px 24px 24px;
+    }
+
+    footer .site_nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin: 0;
+    }
+
+    footer .site_nav > div {
+        width: auto;
+    }
+
+    footer .sns_nav ul {
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        margin-top: 36px;
+    }
+
+    .info_nav {
+        display: block;
+        margin-bottom: 32px;
+        padding: 0 24px;
+    }
+
+    .info_nav .policy ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .info_nav .policy ul li {
+        margin-left: 0;
+    }
+
+    footer .me_information {
+        position: static;
+        margin-top: 28px;
+        text-align: left;
+        line-height: 1.7;
+    }
+
+    footer .corporate_container {
+        display: block;
+        padding: 0 24px 40px;
+    }
+
+    footer .corp_information {
+        margin-left: 0;
+        margin-bottom: 24px;
+        line-height: 1.7;
+        font-size: 10px;
+    }
+
+    .site_information {
+        position: static;
+        text-align: left;
+        line-height: 1.7;
+        font-size: 10px;
+    }
+}
+
+/* 480px */
+@media screen and (max-width: 480px) {
+    .coupon_info_container {
+        padding: 0 36px 0 12px;
+    }
+
+    .coupon_info_container > a {
+        font-size: 10px;
+    }
+
+    .coupon_info_container > button {
+        right: 12px;
+    }
+
+    header {
+        padding: 10px 16px;
+    }
+
+    header > .home_btn > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav > ul > li {
+        margin: 0 6px;
+    }
+
+    nav > ul > li > a {
+        font-size: 18px;
+    }
+
+    .product_list_header {
+        margin: 0 16px;
+    }
+
+    .breadcrumb {
+        margin-top: 112px;
+        font-size: 12px;
+    }
+
+    .product_list_header > h1 {
+        font-size: 32px;
+        margin: 28px 0;
+    }
+
+    .filter_container > ul {
+        gap: 14px;
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .button_container {
+        gap: 8px;
+    }
+
+    .button_container > .filter_btn,
+    .button_container > .sort_btn {
+        width: auto;
+        min-width: 88px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .product_list {
+        margin-top: 44px;
+    }
+
+    .product_list > ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 44px 12px;
+        margin: 0 16px;
+    }
+
+    .product_list > ul > li > a > img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .product_list .tag {
+        font-size: 11px;
+    }
+
+    .product_list .title,
+    .product_list .price {
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .pagination {
+        margin: 56px 0;
+        gap: 6px;
+    }
+
+    .pagination button {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    footer .footer_container {
+        padding: 36px 16px 24px;
+    }
+
+    footer .site_nav {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    footer .site_nav > div {
+        width: 100%;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    footer .site_nav > div:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    footer .site_nav h4 {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+
+    footer .footer_accordion_btn {
+        cursor: pointer;
+    }
+
+    footer .footer_accordion_icon {
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    footer .site_nav li {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    footer .site_nav ul {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin-top: 0;
+        transition: max-height 0.35s ease, opacity 0.25s ease, margin-top 0.25s ease;
+    }
+
+    footer .site_nav > div.is-open ul {
+        opacity: 1;
+        margin-top: 12px;
+    }
+
+    footer .site_nav > div.is-open .footer_accordion_icon {
+        transform: rotate(180deg);
+    }
+
+    footer .sns_nav ul {
+        gap: 22px;
+        margin-top: 32px;
+    }
+
+    .info_nav {
+        padding: 0 16px;
+    }
+
+    .info_nav .policy ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer .me_information {
+        font-size: 11px;
+    }
+
+    footer .corporate_container {
+        padding: 0 16px 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer .corporate_container .corp_information {
+        flex: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 11px;
+    }
+
+    footer .corporate_container .site_information {
+        flex: none;
+        width: 100%;
+        position: static;
+        text-align: left;
+        font-size: 11px;
+    }
+}

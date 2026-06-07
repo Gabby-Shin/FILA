@@ -78,7 +78,7 @@
     padding: 12px 16px;
     cursor: pointer;
 }
-    /* 기본 화살표 제거 */
+/* 기본 화살표 제거 */
 summary {
     list-style: none;
 }
@@ -834,6 +834,194 @@ hr{
 }
 
 
+/* ===================================
+   480PX
+=================================== */
+@media screen and (max-width: 480px) {
+
+    #main > div:first-child {
+        height: 72vh;
+        min-height: 500px;
+    }
+
+    #main > .main_info {
+        padding: 36px 16px;
+    }
+
+    #main .information .title h1 {
+        font-size: 26px;
+    }
+
+    #main .information .header {
+        font-size: 13px;
+    }
+
+    #main .information .group img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .accordion details .body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #detail {
+        padding: 40px 16px;
+    }
+
+    #detail .image_container {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    #detail .information .text {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 36px;
+    }
+
+    .product_information > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        margin-bottom: 16px;
+    }
+
+    .product_information > div > span:last-child {
+        line-height: 1.7;
+    }
+
+    #detail .accordion .fit_container {
+        grid-template-columns: 1fr;
+    }
+
+    #checkpoint,
+    #model_cut {
+        padding: 44px 16px;
+        margin: 44px 0;
+    }
+
+    #checkpoint .check_title > h2,
+    #model_cut > .model_cut_title > h2 {
+        font-size: 22px;
+    }
+
+    #checkpoint .check_title .buttons > button,
+    #model_cut .buttons > button {
+        width: 48px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    #checkpoint .card {
+        width: 240px;
+    }
+
+    #checkpoint .card h3 {
+        font-size: 16px;
+    }
+
+    #checkpoint .card p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    #model_cut p {
+        font-size: 14px;
+    }
+
+    #model_cut .image_container .image_container_card img {
+        width: 240px;
+        height: 240px;
+    }
+
+    #review {
+        margin: 0 16px;
+    }
+
+    #review > h2 {
+        font-size: 28px;
+    }
+
+    #review .rating > div {
+        padding: 0;
+    }
+
+    #review .total_rating > div {
+        margin-bottom: 12px;
+    }
+
+    #review .total_rating .title {
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    #review .photo_video > .header {
+        margin: 36px 0 20px;
+    }
+
+    #review .photo_video > ul li {
+        flex-basis: 120px;
+    }
+
+    #review .search_container {
+        display: block;
+    }
+
+    #review .search_container button {
+        margin-bottom: 12px;
+        text-align: left;
+    }
+
+    #review .filter .search {
+        display: flex;
+        width: 100%;
+    }
+
+    #review .filter .search > input {
+        width: 100%;
+    }
+
+    .dropdown {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+
+    .dropdown::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dropdown button {
+        flex: 0 0 auto;
+    }
+
+    .options {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #review .reviews .item .images {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        scrollbar-width: none;
+    }
+
+    #review .reviews .item .images::-webkit-scrollbar {
+        display: none;
+    }
+
+    #review .reviews .item .images > .image_button {
+        flex: 0 0 84px;
+        width: 84px;
+        height: 84px;
+    }
+
+    .reviews .item .contents .thumbs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
 
 

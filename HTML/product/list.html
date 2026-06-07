@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>상품 목록</title>
     <script src="https://kit.fontawesome.com/d19fdaba43.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../CSS/product/list.css">
@@ -9,11 +11,13 @@
     <script src="../../JS/layout/list.js" defer></script>
 </head>
 
-<header>
-    <div class="coupon_info_container">
-        <span>FILA 카카오 플러스친구 추가 시 10% 쿠폰 </span>
-    </div>
+<body>
+<div class="coupon_info_container">
+    <a href="#">FILA 카카오 플러스친구 추가 시 10% 쿠폰</a>
+    <button type="button"><i class="fa-solid fa-x"></i></button>
+</div>
 
+<header>
     <a class="home_btn" href="#">
         <img src="../../IMAGE/LOGO/images.png" alt="헤더로고">
     </a>
@@ -29,7 +33,7 @@
     <nav>
         <ul>
             <li>
-                <a href="#">
+                <a href="#" class="location_btn">
                     <i class="fa-solid fa-map-location-dot"></i>
                 </a>
             </li>
@@ -48,11 +52,15 @@
                     <i class="fa-solid fa-bag-shopping"></i>
                 </a>
             </li>
+            <li>
+                <a href="#" class="menu_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 
-<body>
     <div class="product_list_header">
         <span class="breadcrumb">
             <a href="#">WOMEN</a>
@@ -788,51 +796,70 @@
 
 
 
-    <footer>
-        <div class="footer_container">
-            <section class="site_nav">
-                <div>
-                    <h4>Corporate</h4>
-                    <ul>
-                        <li><a href="#">About FILA</a></li>
-                        <li><a href="#">Athletes</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Collaboration</a></li>
-                        <li><a href="#">Misto Holdings IR</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Partnership</h4>
-                    <ul>
-                        <li><a href="#">단체판매</a></li>
-                        <li><a href="#">대리점 개설문의</a></li>
-                        <li><a href="#">입찰 참여 안내</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">고객센터</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">1:1문의</a></li>
-                        <li><a href="#">멤버혜택</a></li>
-                    </ul>
-                </div>
+<!-- ... existing code ... -->
 
-            </section>
+<footer>
+    <div class="footer_container">
+        <section class="site_nav">
+            <div>
+                <h4>
+                    <button type="button" class="footer_accordion_btn" aria-expanded="false">
+                        <span>Corporate</span>
+                        <i class="fa-solid fa-chevron-down footer_accordion_icon"></i>
+                    </button>
+                </h4>
+                <ul>
+                    <li><a href="#">About FILA</a></li>
+                    <li><a href="#">Athletes</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Collaboration</a></li>
+                    <li><a href="#">Misto Holdings IR</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>
+                    <button type="button" class="footer_accordion_btn" aria-expanded="false">
+                        <span>Partnership</span>
+                        <i class="fa-solid fa-chevron-down footer_accordion_icon"></i>
+                    </button>
+                </h4>
+                <ul>
+                    <li><a href="#">단체판매</a></li>
+                    <li><a href="#">대리점 개설문의</a></li>
+                    <li><a href="#">입찰 참여 안내</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>
+                    <button type="button" class="footer_accordion_btn" aria-expanded="false">
+                        <span>Support</span>
+                        <i class="fa-solid fa-chevron-down footer_accordion_icon"></i>
+                    </button>
+                </h4>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">멤버혜택</a></li>
+                </ul>
+            </div>
 
-            <section class="sns_nav">
-                <nav>
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    </ul>
-                </nav>
-            </section>
-        </div>
+        </section>
+
+        <section class="sns_nav">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    <!-- ... existing code ... -->
 
 
         <section class="info_nav">
