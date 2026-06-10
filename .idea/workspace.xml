@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="251b5e1c-4022-4e05-8224-bd41ce46eb6f" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/product/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/product/detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/product/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/product/list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/product/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/layout/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/layout/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/layout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/layout/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/layout/list.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Gabby-Shin/FILA.git&quot;,
-    &quot;accountId&quot;: &quot;0cc8fc38-b5f6-44a2-bc86-4f396474361b&quot;
+    &quot;accountId&quot;: &quot;0d29a6f8-2686-471e-b250-cd1da3818838&quot;
   }
 }</component>
   <component name="McpProjectServerCommands">
@@ -151,7 +143,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.24374.125" />
       </set>
     </attachedChunks>
   </component>
@@ -174,6 +166,9 @@
       <workItem from="1780616727171" duration="14917000" />
       <workItem from="1780669826565" duration="3433000" />
       <workItem from="1780673309646" duration="8371000" />
+      <workItem from="1780876664122" duration="1520000" />
+      <workItem from="1780878213878" duration="4122000" />
+      <workItem from="1780890803133" duration="35000" />
     </task>
     <servers />
   </component>
